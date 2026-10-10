@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "pillar": "EVALUACION_ADAPTATIVA",
+    "title": "An exploratory feasibility study of adaptive assessment: a multivariate, data-driven approach to formative evaluation",
+    "doi": "10.3389/feduc.2026.1849701",
+    "doi_url": "https://doi.org/10.3389/feduc.2026.1849701",
+    "year": "2026",
+    "journal": "Frontiers in Education",
+    "creator": "Almalawi A.",
+    "file": "EN_PAPER_01_An_exploratory_feasibility_study_of.pdf",
+    "size_kb": 1497.2,
+    "num_pages": 17
+  },
+  {
+    "id": 2,
+    "pillar": "RANDOM_FOREST_DROPOUT",
+    "title": "Prescriptive Learning Analytics for Student Dropout: Integrating Temporal Velocity and Counterfactual Explanations in Longitudinal Data",
+    "doi": "10.62411/jcta.15920",
+    "doi_url": "https://doi.org/10.62411/jcta.15920",
+    "year": "2026",
+    "journal": "Journal of Computing Theories and Applications",
+    "creator": "Hidayat N.",
+    "file": "EN_PAPER_02_Prescriptive_Learning_Analytics_for.pdf",
+    "size_kb": 779.7,
+    "num_pages": 20
+  },
+  {
+    "id": 3,
+    "title": "Artificial intelligence and education: A bibliometric analysis of global research trends and future directions",
+    "doi": "10.31893/multirev.2026488",
+    "doi_url": "https://doi.org/10.31893/multirev.2026488",
+    "year": "2026",
+    "journal": "Multidisciplinary Reviews",
+    "creator": "Mohamad A.H.H.",
+    "file": "EN_PAPER_03_Artificial_intelligence_and_educati.pdf",
+    "size_kb": 625.2,
+    "num_pages": 11
+  },
+  {
+    "id": 4,
+    "title": "An explainable AI framework for multimodal student performance prediction and institutional decision support at PSAU",
+    "doi": "10.5267/j.dsl.2026.8.010",
+    "doi_url": "https://doi.org/10.5267/j.dsl.2026.8.010",
+    "year": "2026",
+    "journal": "Decision Science Letters",
+    "creator": "Ali G.M.",
+    "file": "EN_PAPER_04_An_explainable_AI_framework_for_mul.pdf",
+    "size_kb": 784.4,
+    "num_pages": 18
+  }
+]

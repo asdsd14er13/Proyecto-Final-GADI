@@ -1,0 +1,1442 @@
+
+--- PÁGINA 1 ---
+ 
+UNIVERSIDAD NACIONAL FEDERICO VILLARREAL  
+FACULTAD DE INGENIERÍA ELECTRÓNICA E INFORMÁTICA 
+ 
+ 
+SISTEMA INTELIGENTE DE EVALUACIÓN ADAPTATIVA Y 
+PERSONALIZACIÓN DEL APRENDIZAJE UNIVERSITARIO 
+ 
+Integrantes: 
+Anchillo Mallqui Christian Elias 
+Herrera Ccari Robert Eloy 
+Vasquez Berrocal Jimmy Adrian 
+Zavala Castillo Mariam Yohanan 
+ 
+Docente: Mg. Ing. Ivan Crispin Sanchez 
+ 
+ 
+Lima, Perú 
+2026 
+
+--- PÁGINA 2 ---
+ 
+Introducción 
+1. Presentación del Proyecto 
+El presente proyecto diseña e implementa una plataforma integral de Business 
+Intelligence (BI) y Machine Learning (ML) concebida para transformar la gestión del 
+seguimiento académico y la retención estudiantil en la Universidad Nacional Federico Villarreal 
+(UNFV), focalizando su aplicación piloto en la Facultad de Ingeniería Electrónica e Informática 
+(FIEI). La arquitectura tecnológica articula un DataMart relacional en Microsoft SQL Server 
+bajo metodología dimensional, pipelines automatizados de Extracción, Transformación y Carga 
+(ETL) en Visual Studio SQL Server Integration Services (SSIS), cubos multidimensionales 
+OLAP en SQL Server Analysis Services (SSAS), modelos predictivos de aprendizaje automático 
+en Python (Scikit-Learn) y paneles interactivos de control en Microsoft Power BI Desktop con 
+simulación de escenarios What-If. 
+La plataforma está orientada a resolver una limitación estructural recurrente en las 
+universidades públicas peruanas: la detección tardía e inconexa de los estudiantes en riesgo de 
+abandono. Frente a los modelos tradicionales que constatan el fracaso escolar cuando los 
+exámenes parciales ya han concluido, esta solución implementa un mecanismo preventivo de 
+doble impacto: evaluación adaptativa en dos momentos cronológicos estratégicos (ingreso vs. 
+primer semestre) y personalización del acompañamiento tutorial a través de segmentación no 
+supervisada por clústeres socioacadémicos. 
+2. Problema Identificado y Contexto Empírico 
+La deserción en la educación superior universitaria peruana representa una problemática 
+crítica con graves consecuencias sociales, académicas e institucionales. De acuerdo con 
+estadísticas del Ministerio de Educación (MINEDU) y el Sistema de Información Universitaria 
+(TUNI) de la Superintendencia Nacional de Educación Superior Universitaria (SUNEDU, 2024), 
+la tasa nacional de deserción acumulada en pregrado oscila entre el 12% y 18% en el primer año 
+académico. Esta cifra se agrava sustancialmente en las facultades de ingeniería y ciencias 
+exactas, donde la reprobación masiva en asignaturas troncales (Cálculo, Física y Álgebra) 
+desencadena el desánimo vocacional y el abandono voluntario (Navarro Peñaranda et al., 2025). 
+--- PÁGINA 3 ---
+ 
+A nivel del entorno laboral y socioeconómico de los estudiantes, el procesamiento de los 
+microdatos de la Encuesta Nacional de Hogares (INEI ENAHO 2023, Módulos 300 de 
+Educación y 500 de Empleo, aplicando el filtro P308A=5 de educación superior universitaria y el 
+factor de expansión FAC500A) revela que el 44.0% de los jóvenes universitarios peruanos 
+trabaja de forma simultánea a sus estudios, dedicando en promedio 34.7 horas semanales a su 
+jornada laboral (Barrera-Liévano et al., 2025; Vega Velásquez et al., 2025). Esta sobrecarga 
+laboral compite directamente con el tiempo de estudio presencial y autónomo, incrementando la 
+vulnerabilidad académica si no es detectada oportunamente. 
+Como base empírica de referencia y validación técnica de algoritmos (prueba de concepto 
+analítica, ante la reserva de datos protegidos por la Ley N.° 29733 de Protección de Datos 
+Personales), se utiliza el benchmark abierto del Machine Learning Repository de la Universidad 
+de California en Irvine (UCI - Predict Students' Dropout and Academic Success, Realinho et al., 
+2022). Este conjunto de datos comprende 4,424 registros de matrícula, 37 atributos 
+socioeconómicos y académicos normalizados en escala vigesimal (0 a 20) y nota de admisión (0 
+a 200), y una distribución observada de condición de graduación (49.9%), abandono o dropout 
+(32.1%) y matrícula activa continua (17.9%). 
+3. Árbol de Problemas Institucional 
+Para formalizar la relación entre causas y efectos en la gestión académica actual, se 
+estructura el siguiente diagnóstico: 
+a) Efectos Finales: 
+Pérdida de gratuidad de la enseñanza universitaria (mandato del Artículo 99 de la Ley 
+Universitaria N.° 30220 al acumular asignaturas desaprobadas), rezago curricular crónico, baja 
+tasa de graduación oportuna y frustración vocacional en las escuelas de ingeniería (Romero-
+Tenorio et al., 2026). 
+b) Problema Central: 
+Alta tasa de deserción no advertida y pérdida de rendimiento en estudiantes de primeros ciclos en 
+la FIEI-UNFV, debido a la ausencia de un sistema automatizado de alerta temprana e 
+intervención tutorial personalizada. 
+ 
+--- PÁGINA 4 ---
+ 
+c) Causas Raíz Identificadas: 
+1. Latencia informacional de 8 a 10 semanas para consolidar notas de exámenes parciales en la 
+intranet. 
+2. Silos de datos: las calificaciones de prácticas intermedias permanecen en hojas de cálculo 
+aisladas en computadoras docentes. 
+3. Diagnóstico reactivo post-mortem basado en promedios aritméticos simples (< 10.5) sin 
+análisis predictivo multivariable. 
+4. Intervenciones tutoriales genéricas y tardías que no discriminan la causa raíz (económica, 
+laboral o matemática). 
+4. Importancia de la Solución y Beneficios por Actor 
+La implementación de este sistema de Inteligencia de Negocios e Inteligencia Artificial 
+genera impactos positivos medibles en los cuatro niveles de gestión de la facultad: 
+Tabla 1 
+Matriz de Beneficios Institucionales por Actor Clave 
+Actor Institucional Rol en el Proceso Beneficio Concreto del Sistema Componente Asociado 
+Director de Escuela Aprobador 
+Estratégico 
+Visibilidad ejecutiva de tasas de deserción y 
+rendimiento por asignatura en tiempo real; 
+simulación de retención institucional. 
+Dashboard Power BI y 
+Cubo SSAS. 
+Comité de Tutoría Gestor Operativo Semáforo predictivo priorizado de riesgo 
+por estudiante; emisión de alertas 
+preventivas en semana 2 sin esperar al 
+examen parcial. 
+Módulo de ML en 
+Python y Dashboard 
+Power BI.  
+Docente Tutor Interventor 
+Pedagógico 
+Ficha integral del estudiante con 
+diagnóstico del perfil (Clúster) y 
+recomendación precisa de la acción de 
+rescate requerida. 
+Matriz de 
+Recomendación y Ficha 
+Individual Power BI. 
+Estudiante FIEI Beneficiario 
+Directo 
+Acompañamiento tutorial oportuno antes de 
+la pérdida de gratuidad; nivelación en 
+ciencias básicas o becas de bienestar. 
+Acciones Prescritas del 
+Proceso TO-BE. 
+. 
+--- PÁGINA 5 ---
+ 
+5. Delimitación y Alcance del Proyecto 
+A fin de asegurar el rigor metodológico y concentrar los esfuerzos en la ingeniería de 
+datos y analítica predictiva exigidas por la cátedra, se establecen las siguientes delimitaciones 
+operativas: 
+Tabla 2 
+Matriz de Alcance: Componentes Incluidos vs. Excluidos 
+Dimensión / 
+Componente 
+Incluido en el Alcance 
+(In-Scope) 
+Excluido del Alcance 
+(Out-of-Scope) 
+Justificación Metodológica 
+Canal de 
+Visualización 
+Paneles analíticos e 
+interactivos en Power BI 
+Desktop con parámetros 
+What-If. 
+Desarrollo de portales 
+web full-stack, 
+aplicaciones móviles o 
+microservicios. 
+Power BI concentra el valor en el 
+modelado semántico y análisis 
+decisional; desarrollar software web 
+transaccional dispersa el esfuerzo sin 
+aportar valor analítico. 
+Evaluación 
+Pedagógica 
+Evaluación adaptativa por 
+hitos cronológicos (M1 
+Ingreso vs. M2 Fin 
+Semestre 1). 
+Tests adaptativos 
+computarizados (CAT) 
+reactivo por reactivo 
+bajo Teoría de 
+Respuesta al Ítem. 
+No existen datos de interacción ítem a 
+ítem; forzarlo destruiría la trazabilidad 
+del DataMart relacional. 
+Integración de 
+Datos 
+Articulación conceptual y 
+agregada por escuela y 
+departamento entre UCI, 
+TUNI y ENAHO. 
+Cruce forzado estudiante 
+a estudiante con 
+identificadores ficticios 
+entre UCI y ENAHO. 
+Falacia de datos ('Frankenstein'). Se 
+respeta la integridad y granularidad de 
+cada fuente primaria. 
+Población del 
+Tablero 
+Cálculo de probabilidad 
+continua de riesgo para el 
+100% de la matrícula. 
+Limitación a solo el 
+subconjunto de prueba 
+(test split del 20%). 
+El cuadro de mando de tutoría exige 
+visibilidad total de toda la cohorte 
+matriculada para gestionar rescates. 
+Simulación What-
+If 
+Modelado interactivo de 
+capacidad tutorial 
+variando umbral de riesgo 
+y cobertura institucional. 
+Garantía de reducción 
+causal absoluta de 
+deserción sin validación 
+de campo. 
+Rigor científico: el What-If modela 
+supuestos de capacidad de gestión 
+institucional, no efectos causales 
+directos. 
+ 
+--- PÁGINA 6 ---
+ 
+Capítulo I: Generalidades de la Organización 
+1.1. Descripción de la Empresa u Organización 
+La entidad marco del presente estudio es la Universidad Nacional Federico Villarreal 
+(UNFV), institución pública autónoma de educación superior universitaria del Estado Peruano, 
+focalizando la implementación piloto en su Facultad de Ingeniería Electrónica e Informática 
+(FIEI). 
+La UNFV ostenta Licenciamiento Institucional otorgado por la Superintendencia 
+Nacional de Educación Superior Universitaria (SUNEDU) mediante Resolución del Consejo 
+Directivo N° 035-2019-SUNEDU/CD, expedida el 11 de marzo de 2019, la cual acreditó el 
+cumplimiento riguroso de las Condiciones Básicas de Calidad (CBC) exigidas por la Ley 
+Universitaria N° 30220. 
+La FIEI concentra la formación tecnológica y científica de vanguardia de la universidad 
+en su sede de Breña (Jr. Iquique N° 127), albergando una población superior a los 2,200 
+estudiantes de pregrado distribuidos en sus cuatro escuelas profesionales: Escuela Profesional de 
+Ingeniería Informática, Escuela Profesional de Ingeniería Electrónica, Escuela Profesional de 
+Ingeniería Mecatrónica y Escuela Profesional de Ingeniería de Telecomunicaciones. El régimen 
+académico es semestral, con 16 semanas lectivas por ciclo y escala de calificación vigesimal 
+oficial (0 a 20). 
+1.2. Historia, Misión, Visión y Valores Institucionales 
+1.2.1. Reseña Histórica Oficial: 
+La Universidad Nacional Federico Villarreal fue creada mediante la Ley N.° 14692, 
+promulgada el 30 de octubre de 1963 (verificada estrictamente en el Diario Oficial El Peruano), 
+naciendo sobre la base de la filial en Lima de la Universidad Comunal del Centro del Perú. 
+Nombrada en memoria del insigne sabio, matemático, físico e ingeniero peruano Federico 
+Villarreal, la universidad ha cumplido más de seis décadas formando profesionales. La FIEI se 
+constituyó como unidad académica autónoma orientada a liderar la investigación, el desarrollo 
+tecnológico y la analítica computacional. 
+1.2.2. Misión Institucional (Estatuto y PEI UNFV Vigente): 
+--- PÁGINA 7 ---
+ 
+"Formar profesionales e investigadores competitivos, con sólidos valores éticos, 
+humanísticos, científicos y tecnológicos, comprometidos con el desarrollo sostenible del país." 
+(Estatuto UNFV, Art. 7) 
+1.2.3. Visión Institucional (Estatuto y PEI UNFV Vigente): 
+"Ser una universidad pública licenciada y acreditada internacionalmente, líder en la 
+formación integral de excelencia e investigación innovadora de alto impacto social." (PEI 
+UNFV 2022-2026) 
+1.2.4. Valores Institucionales: 
+• Rigor Científico y Excelencia Académica: Compromiso con la exactitud metodológica, 
+la ingeniería de datos y la veracidad de los modelos analíticos. 
+• Ética e Integridad: Transparencia en la gestión informacional, auditoría de procesos y 
+respeto irrestricto a la privacidad de los datos estudiantiles. 
+• Responsabilidad Social y Equidad: Orientación de las políticas institucionales a la 
+protección de los sectores estudiantiles vulnerables y prevención del rezago. 
+• Innovación Continua: Adopción proactiva de arquitecturas de Business Intelligence y 
+algoritmos de Machine Learning para modernizar la gestión pública universitaria. 
+Tabla 3 
+Alineamiento Estratégico entre la Filosofía UNFV y la Plataforma Analítica 
+Eje Estratégico UNFV Compromiso Institucional 
+Declarado 
+Alineamiento y Cumplimiento del 
+Proyecto de BI + IA 
+Misión: Formación 
+Profesional Competitiva 
+Garantizar la culminación oportuna de 
+los planes de estudio y evitar la 
+deserción. 
+El sistema alerta tempranamente el rezago en 
+asignaturas troncales de ingeniería, asegurando 
+la continuidad formativa. 
+Visión: Excelencia y 
+Acreditación 
+Cumplimiento permanente de 
+estándares de retención y calidad 
+educativa universitaria. 
+Provee métricas de retención objetivas y 
+auditables que sustentan auditorías de 
+SUNEDU y modelos de acreditación 
+SINEACE. 
+Valores: Equidad y 
+Responsabilidad 
+Evitar que barreras socioeconómicas y 
+laborales trunquen la vocación 
+universitaria. 
+Segmenta a los estudiantes según horas de 
+trabajo y condición económica para priorizar 
+becas y tutorías diferenciadas. 
+. 
+--- PÁGINA 8 ---
+ 
+1.3. Estructura Organizativa y Organigrama Funcional 
+La gobernanza y el seguimiento del rendimiento académico en la Facultad de Ingeniería 
+Electrónica e Informática (FIEI) de la UNFV se estructuran bajo un modelo funcional y 
+jerárquico formal, encabezado por el Consejo de Facultad como máxima autoridad deliberativa y 
+el Decano como máxima autoridad ejecutiva, con el soporte estratégico de la Oficina de 
+Planeamiento y el Comité Consultivo. 
+Figura 1 
+Organigrama Estructural de la Facultad de Ingeniería Electrónica e Informática (FIEI - UNFV) 
+ 
+Nota. Fuente: Adaptado del Manual de Organización y Funciones (MOF) y del Estatuto Universitario de la Universidad 
+Nacional Federico Villarreal (UNFV, 2024), Facultad de Ingeniería Electrónica e Informática. 
+ 
+Para la operatividad del sistema de Inteligencia de Negocios y Analítica Predictiva, la 
+interacción entre dependencias se articula en tres niveles clave: 
+• Nivel Estratégico (Decanato y Consejo de Facultad): Supervisa los indicadores macro 
+de retención institucional, deserción por ciclo y simulaciones What-If de capacidad presupuestal 
+y tutorial. 
+
+--- PÁGINA 9 ---
+ 
+• Nivel Táctico (Escuelas Profesionales y Departamento Académico): Las direcciones de 
+las cuatro escuelas profesionales (Ingeniería Informática, Ingeniería Electrónica, Ingeniería 
+Mecatrónica e Ingeniería de Telecomunicaciones), en coordinación con el Departamento 
+Académico y la Oficina de Servicios Académicos, gestionan las cohortes de estudiantes, analizan 
+las asignaturas con mayor índice de reprobación y programan la carga lectiva docente. 
+• Nivel Operativo (Dirección de Orientación y Tutoría): Es la unidad orgánica 
+especializada encargada de coordinar las acciones de rescate estudiantil. A través de este tablero, 
+la dirección y los docentes tutores asignados reciben las alertas tempranas del semáforo 
+predictivo de riesgo para ejecutar el acompañamiento académico personalizado y canalizar 
+asistencias socioeconómicas. 
+Esta disposición define con exactitud los perfiles de usuario, niveles de acceso y carriles 
+(Swimlanes) del flujo analítico TO-BE implementado en la plataforma.  
+ 
+1.4. Área Involucrada y Matriz de Responsabilidades (RACI) 
+El seguimiento del estudiante involucra a dependencias académicas, tutoriales y de apoyo 
+bajo el mandato formal de los Artículos 126 (Tutoría Universitaria) y 128 (Servicios de 
+Bienestar) de la Ley Universitaria N° 30220. Se formaliza la matriz RACI del proceso: 
+Tabla 4 
+Matriz RACI del Proceso de Seguimiento Académico y Retención 
+Actividad / Proceso Analítico Director 
+Escuela 
+Comité 
+Tutoría 
+Docente 
+Tutor 
+Bienestar 
+Univ. 
+Plataform
+a BI+IA 
+1. Consolidación de datos de matrícula y 
+notas (ETL) 
+I I I I R / A 
+2. Emisión y monitoreo del semáforo de 
+riesgo predictivo 
+A R C I R 
+3. Asignación de estudiantes críticos a 
+tutores de escuela 
+A R I C Soporte 
+4. Ejecución de sesiones tutoriales y talleres 
+de nivelación 
+I A R C Soporte 
+5. Asignación de becas comedor y ayudas 
+de bienestar 
+I C C R / A Soporte 
+--- PÁGINA 10 ---
+ 
+6. Evaluación global de KPIs y simulación 
+de retención What-If 
+R / A C I I Soporte 
+ 
+Leyenda RACI:  
+R = Responsable de la ejecución.  
+A = Aprobador final. 
+C = Consultado para criterio experto. 
+I = Informado de los resultados. 
+1.5. Descripción del Proceso Actual (AS-IS) 
+En el régimen operativo actual de la FIEI-UNFV, el seguimiento del rendimiento se 
+ejecuta de forma desarticulada, manual y predominantemente reactiva. A lo largo del ciclo 
+regular de 16 semanas, el flujo se desenvuelve de la siguiente forma: 
+Tabla 5 
+Desglose de Actividades del Proceso Tradicional (AS-IS) 
+N° Actividad Operativa Actor Semana Salida / Artefacto Cuello de Botella y 
+Problema Detectado 
+1 Matrícula regular Estudiante Sem. 0 Ficha de matrícula Solo registra cursos; no 
+captura situación laboral ni 
+horas de trabajo. 
+2 Desarrollo de clases y 
+prácticas 
+Docente Sem. 1-7 Excel personal Las notas parciales quedan 
+aisladas en laptops de 
+profesores; cero visibilidad. 
+3 Exámenes parciales Docente/Alumn
+o 
+Sem. 8 Exámenes físicos Primer hito formal; el 
+estudiante ya acumula 2 meses 
+de rezago no detectado. 
+4 Carga oficial a intranet Docente Sem. 9-10 Acta digital Latencia crítica: frecuentes 
+retrasos en la digitación 
+institucional de notas. 
+5 Revisión manual de 
+notas 
+Comité Tutoría Sem. 10-
+11 
+Lista en papel Diagnóstico post-mortem: 
+filtrado manual de promedios 
+< 10.5 sin análisis 
+multivariable. 
+ 
+--- PÁGINA 11 ---
+ 
+6 Exámenes finales y 
+actas 
+Docente Sem. 16 Acta final Consumación del fracaso 
+académico, repitencia o 
+matrícula condicionada. 
+ 
+1.6. Diagrama AS-IS y Catálogo de Dolores de Gestión 
+El modelado del proceso AS-IS estructurado en tres carriles (Estudiante, Docente de 
+Asignatura y Comité de Tutoría) evidencia cuatro puntos críticos de dolor que motivan la 
+solución: 
+• DOLOR 1 (Silos de Información): Las notas de evaluaciones continuas se almacenan en 
+archivos Excel personales de los docentes, desconectados de las bases centrales. La facultad 
+permanece a oscuras respecto al desempeño durante las primeras 7 semanas de clases. 
+• DOLOR 2 (Latencia Informacional Crítica): Retraso de 9 a 10 semanas desde el inicio 
+del semestre para que las autoridades y tutores dispongan de calificaciones consolidadas en el 
+sistema oficial. 
+• DOLOR 3 (Detección Reactiva 'Post-Mortem'): La identificación de estudiantes en 
+riesgo se efectúa manualmente revisando promedios aritméticos simples (< 10.5) cuando el 
+estudiante ya reprobó el examen parcial. 
+• DOLOR 4 (Intervención Uniforme e Ineficaz): La citación a tutoría se emite de manera 
+genérica en las semanas 11 y 12, sin identificar si el origen del rezago es socioeconómico, 
+laboral o de base matemática, y sin margen temporal para revertir la reprobación. 
+1.7. Propuesta del Proceso Futuro (TO-BE) Optimizado con BI + IA 
+El proceso propuesto rediseña la gestión académica mediante la integración de un carril 
+automatizado: la Plataforma BI + IA (ETL SSIS, DataMart SQL Server, Machine Learning en 
+Python y Power BI). El flujo se transforma de un esquema manual y reactivo a un ciclo 
+proactivo, continuo y adaptativo estructurado en 4 carriles de interacción: Estudiante, Docente de 
+Asignatura, Dirección de Orientación y Tutoría y Plataforma Analítica Automatizada. 
+ 
+ 
+ 
+--- PÁGINA 12 ---
+ 
+Tabla 6 
+Desglose Cronológico de Actividades del Proceso Optimizado (TO-BE) 
+N° Actividad Operativa Actor Semana Salida / 
+Artefacto 
+Optimización y Valor 
+Agregado (BI + IA) 
+1 Matrícula y Ficha 
+Integral 
+Estudiante Sem. 0 Ficha de matrícula 
+y Ficha 
+socioacadémica 
+digitalizada 
+Captura de variables 
+socioeconómicas y laborales 
+(horas de trabajo) en origen; 
+elimina la falta de datos previa. 
+2 Evaluación Preventiva 
+(𝑀1) 
+Plataforma BI 
++ IA (SSIS / 
+Python) 
+Sem. 1-2 Probabilidad de 
+riesgo  
+𝑃(Drop)M1 y 
+Clúster K-Means 
+Detección proactiva temprana 
+sin esperar notas; diagnóstico 
+multivariable al inicio de clases. 
+3 Prescripción Tutorial 
+Diferenciada 
+Dir. 
+Orientación y 
+Tutoría 
+Sem. 2-3 Semáforo de riesgo 
+y Ficha de Rescate 
+personalizada 
+Asignación oportuna: el 
+estudiante recibe nivelación 
+matemática o apoyo 
+socioeconómico según su perfil 
+antes del rezago. 
+4 Seguimiento y Registro 
+Continuo 
+Docente / 
+Docente Tutor 
+Sem. 4-8 Notas parciales en 
+intranet 
+centralizada 
+Erradicación de silos locales en 
+Excel; visibilidad continua del 
+avance del estudiante durante las 
+primeras evaluaciones. 
+5 Re-evaluación 
+Adaptativa (𝑀2) 
+Plataforma BI 
++ IA (Cubo 
+SSAS / BI) 
+Sem. 9-
+10 
+Probabilidad de 
+riesgo  
+𝑃(Drop)M2 y 
+varianza (ΔP) 
+Evaluación dinámica: recalcula 
+el riesgo con notas reales de 
+mitad de ciclo, identificando 
+alumnos recuperados o nuevos 
+casos críticos. 
+6 Simulación y Refuerzo 
+Focalizado 
+Directores de 
+Escuela / 
+Tutores 
+Sem. 11-
+15 
+Parámetros What-If 
+en Power BI 
+Simulación interactiva de 
+capacidad tutorial para 
+redistribuir horas de apoyo 
+docente y maximizar la 
+retención en la recta final. 
+7 Cierre y Auditoría de 
+Cohorte 
+Decanato / 
+Consejo de 
+Facultad 
+Sem. 16 Reporte ejecutivo 
+de retención y 
+actas finales 
+Cierre con indicadores objetivos 
+auditables para acreditación 
+(SINEACE/SUNEDU) y 
+retroalimentación del modelo 
+predictivo. 
+ 
+--- PÁGINA 13 ---
+ 
+1.8. Matriz Comparativa Exhaustiva: Proceso AS-IS vs. Proceso TO-BE 
+A continuación, se sintetiza la transformación cualitativa y cuantitativa entre ambos 
+modelos: 
+Tabla 7 
+Matriz Comparativa de Transformación: Proceso AS-IS vs. Proceso TO-BE 
+Dimensión 
+Analítica 
+Situación Actual (AS-
+IS) 
+Situación Propuesta 
+(TO-BE) 
+Componente 
+Tecnológico 
+KPI Asociado 
+de Impacto 
+Tiempo de 
+Detección 
+Semanas 9 a 11: Detección 
+reactiva tras digitar notas 
+de exámenes parciales. 
+Semanas 2 a 4 (M1): 
+Diagnóstico preventivo al 
+ingreso y re-evaluación en 
+M2. 
+Pipeline SSIS + 
+Python ML 
+Tiempo de 
+detección <= 4 
+semanas; Recall 
+>= 75%. 
+Integración de 
+Datos 
+Archivos Excel dispersos 
+en computadoras 
+personales de los docentes. 
+DataMart Centralizado en 
+SQL Server: trayectoria, 
+catálogo y contexto 
+ENAHO. 
+DataMart 
+dimensional (dw) 
+100% de fuentes 
+integradas; 0 
+duplicados. 
+Criterio de 
+Riesgo 
+Promedio simple post-
+parcial (< 10.5) sin análisis 
+predictivo multivariable. 
+Modelo de Machine 
+Learning (Random Forest) 
+que calcula probabilidad 
+continua. 
+dw.FactPrediccio
+n 
+F1-Macro >= 
+0.65; ROC-AUC 
+>= 0.85. 
+Enfoque 
+Evaluativo 
+Estático y terminal; sin 
+seguimiento de la 
+evolución del riesgo. 
+Evaluación Adaptativa 
+Dinámica: re-evaluación 
+del riesgo en dos hitos (M1 
+vs M2). 
+dw.DimEtapa + 
+Cubo SSAS 
+Delta de 
+probabilidad 
+entre etapas 
+(Delta P). 
+Intervención 
+Tutorial 
+Genérica y uniforme para 
+todos los reprobados (aviso 
+o sanción estándar). 
+Personalización por 
+Perfiles: prescripción 
+según clúster identificado 
+por IA. 
+K-Means + 
+Matriz de Reglas 
+Silhouette >= 
+0.35; Cobertura 
+tutorial 100%. 
+Herramienta de 
+Control 
+Actas físicas en papel y 
+listados planos en Excel no 
+interactivos. 
+Dashboard Inteligente en 
+Power BI Desktop con 
+semáforo interactivo. 
+Power BI 
+Desktop 
+100% de 
+directores y 
+tutores 
+consultando en 
+vivo. 
+Planificación de 
+Gestión 
+Empírica e intuitiva; sin 
+capacidad de proyectar 
+rescates. 
+Simulación Interactiva 
+What-If: análisis de 
+capacidad, umbral y 
+efectividad. 
+Parámetros 
+What-If Power 
+BI 
+Estudiantes 
+Proyectados 
+Retenidos (KPI-
+08). 
+--- PÁGINA 14 ---
+ 
+Capítulo II: Marco Teórico y Aplicación de Ingeniería 
+El presente capítulo establece los fundamentos teóricos, matemáticos y metodológicos 
+que sustentan la plataforma. Conforme a las exigencias académicas de la cátedra, cada subtema 
+se desglosa en dos partes esenciales:  
+(1) Fundamentación Conceptual respaldada por literatura científica indexada 
+contemporánea (2022-2026) 
+(2) Justificación y Aplicación de Ingeniería Concreta en los artefactos del sistema. 
+2.0. Antecedentes de la Investigación 
+La aplicación de Inteligencia de Negocios y Aprendizaje Automático en educación 
+superior cuenta con un cuerpo sólido de investigación contemporánea internacional y nacional. 
+Se sintetizan los estudios empíricos directamente vinculados al diseño de nuestra arquitectura: 
+Tabla 8 
+Síntesis de Antecedentes Empíricos y Aportes Adoptados 
+N
+° 
+Autores y Año Contexto / 
+Institución 
+Técnicas de IA 
+Empleadas 
+Métricas 
+Reportadas 
+Aporte Concreto 
+Adoptado en este 
+Proyecto 
+01 Realinho et al. 
+(2022) 
+Inst. Politécnico 
+Portalegre (4,424 
+alumnos, 37 vars). 
+Random Forest, 
+Gradient Boosting, 
+CatBoost, 
+SMOTE. 
+Accuracy: 77.1% 
+(3 clases) y 87.2% 
+(binario); F1: 0.64-
+0.77. 
+Paper fundacional del 
+dataset: justifica los 37 
+predictores y el target 
+multiclase (Dropout, 
+Enrolled, Graduate). 
+02 Aparicio-
+Montenegro et 
+al. (2026) 
+UNFV (Universidad 
+Nacional Federico 
+Villarreal, Perú). 
+Random Forest, 
+Regresión 
+Logística, Árboles 
+C4.5, Naive Bayes. 
+RF Accuracy: 
+86.2%; Recall: 
+83.5%; F1-score: 
+0.84. 
+Evidencia empírica 
+directa UNFV: valida la 
+superioridad de Random 
+Forest en estudiantes 
+villarrealinos y el foco en 
+Recall. 
+03 Aco Tito et al. 
+(2023) 
+Univ. Nacional de 
+San Agustín (UNSA, 
+Arequipa, Perú). 
+Random Forest, 
+Regresión 
+Logística, SVM, 
+Árboles CART. 
+RF Acc: 84.7%, 
+F1: 0.83; LR Acc: 
+78.2%, F1: 0.76. 
+Antecedente nacional 
+universitario: 
+fundamenta la 
+comparación técnica 
+obligatoria de LR vs. RF 
+en la rúbrica. 
+--- PÁGINA 15 ---
+ 
+04 Almalawi et al. 
+(2026) 
+Educación Superior 
+Internacional 
+(evaluación 
+formativa). 
+Modelos lineales 
+generalizados, 
+clustering 
+adaptativo. 
+F1: 0.79; Precisión 
+adaptativa: 82.4%. 
+Pilar Evaluación 
+Adaptativa: fundamenta 
+la Decisión D2 (re-
+evaluación dinámica del 
+riesgo por etapas M1 y 
+M2). 
+05 Hidayat et al. 
+(2026) 
+Análisis longitudinal 
+de cohortes 
+universitarias. 
+Random Forest, 
+XGBoost, 
+CatBoost, 
+Regresión 
+Logística. 
+RF ROC-AUC: 
+0.884; Recall 
+Dropout: 84.1%; 
+F1: 0.812. 
+Pilar Analítica 
+Prescriptiva y What-If: 
+sustenta el simulador 
+interactivo variando 
+umbrales y efectividad 
+en Power BI. 
+06 Ali (2026) Prince Sattam bin 
+Abdulaziz 
+University (PSAU). 
+Ensemble Stacking 
+(RF + GB), SHAP 
+values, XAI. 
+Accuracy: 88.6%; 
+Recall: 86.4%; 
+AUC: 0.912. 
+Pilar Alerta Temprana e 
+IA Explicable: valida la 
+articulación de BI con 
+modelos de IA para 
+comités de tutoría. 
+07 Navarro 
+Peñaranda et al. 
+(2025) 
+Facultad de 
+Ingeniería de 
+universidad pública 
+(Colombia). 
+Regresión 
+Logística binaria y 
+árboles CART. 
+Accuracy: 79.3%; 
+Odds Ratio en 
+ciencias básicas = 
+3.42. 
+Alineación con 
+Ingeniería: confirma que 
+el rezago crítico en 
+ingeniería se concentra 
+en cursos troncales 
+(Cálculo/Física). 
+08 Schmidt (2023) Universidad estatal 
+chilena (análisis 
+longitudinal). 
+Supervivencia de 
+Kaplan-Meier y 
+Regresión de Cox. 
+73.8% de 
+deserciones 
+concentradas en 
+los 2 primeros 
+semestres. 
+Justificación de Hitos: 
+sustenta por qué 
+concentrar los dos cortes 
+analíticos (M1 y M2) en 
+el primer año académico. 
+ 
+2.1. Inteligencia de Negocios (Business Intelligence) 
+2.1.1. Fundamentación Conceptual: 
+En la literatura científica contemporánea sobre gestión y analítica de datos en educación 
+superior, la Inteligencia de Negocios (BI) se define como el conjunto integrado de metodologías, 
+arquitecturas y flujos de datos que transforman registros heterogéneos y dispersos en 
+información estructurada y procesable para la toma de decisiones institucionales (Salazar Alberto 
+--- PÁGINA 16 ---
+ 
+et al., 2024; Martín-Caro Álamo & Segovia-García, 2025). El ciclo de vida de la Inteligencia de 
+Negocios comprende cinco fases fundamentales:  
+(1) Extracción de fuentes transaccionales  
+(2) Limpieza y estandarización en áreas de preparación (Staging)  
+(3) Modelado en depósitos analíticos estructurados (DataMart)  
+(4) Procesamiento analítico multidimensional para agregaciones en tiempo real  
+(5) Visualización ejecutiva mediante cuadros de mando interactivos que soportan la 
+monitorización de Indicadores Clave de Rendimiento (KPIs). 
+2.1.2. Aplicación y Decisión de Ingeniería en el Proyecto: 
+En la FIEI-UNFV, la plataforma de BI supera la dispersión de registros manuales 
+integrando la arquitectura completa en Microsoft SQL Server y Power BI: 
+Tabla 9 
+Articulación de Componentes de BI con los Artefactos del Proyecto 
+Componente de BI Tecnología / Herramienta Artefacto Específico en el Proyecto 
+Fuentes Transaccionales Archivos planos CSV y consultas 
+relacionales 
+Extracto académico UCI (data.csv), ENAHO 2023 y 
+catálogo nacional TUNI SUNEDU. 
+Pipeline ETL Visual Studio SQL Server 
+Integration Services (SSIS) 
+Solución ETL_UNFV_Retencion.sln con paquetes 
+independientes de Staging, Dimensiones y Hechos. 
+Almacén Analítico Microsoft SQL Server Database 
+Engine 
+DataMart DM_RetencionAcademica_FIEI con 
+esquemas segregados stg, dw y audit. 
+Procesamiento OLAP Microsoft SQL Server Analysis 
+Services (SSAS) 
+Cubo multidimensional 
+Cubo_RiesgoAcademico.asdatabase con medidas 
+calculadas en MDX y DAX. 
+Consumo y 
+Visualización 
+Microsoft Power BI Desktop Dashboard ejecutivo 
+Dashboard_Retencion_FIEI.pbix estructurado en 4 
+páginas de control interactivo. 
+2.2. Data Warehouse y DataMart (Metodología Dimensional) 
+2.2.1. Fundamentación Conceptual: Arquitectura Dimensional Departamental: 
+En la ingeniería moderna de almacenes de datos universitarios, la literatura especializada 
+destaca la superioridad de los DataMarts departamentales orientados a procesos de negocio 
+específicos frente a macroproyectos corporativos centralizados que suelen fracasar por 
+--- PÁGINA 17 ---
+ 
+sobredimensión de alcance (Salazar Alberto et al., 2024). El enfoque dimensional organiza los 
+datos en función de las necesidades de análisis del usuario final, empleando Dimensiones 
+Conformadas (Conformed Dimensions) para interconectar múltiples procesos analíticos de forma 
+consistente y evolutiva. 
+2.2.2. Aplicación y Decisión de Ingeniería en el Proyecto: 
+Se selecciona formalmente la arquitectura dimensional de DataMart departamental. Dado 
+que el objetivo del proyecto es optimizar el proceso de seguimiento y retención estudiantil en la 
+FIEI-UNFV, unificar nóminas, compras o patrimonio dispersaría el esfuerzo analítico. La 
+construcción de un DataMart departamental en SQL Server garantiza un diseño ágil, granular y 
+optimizado para consultas analíticas de lectura masiva. Para asegurar la gobernanza, se definen 
+tres esquemas lógicos segregados en la base de datos: 
+• stg (Staging Area): Área de aterrizaje volátil donde se insertan los datos crudos sin 
+restricciones de integridad referencial para su perfilado y limpieza. 
+• dw (DataMart Dimensional): Área de producción analítica donde residen las 
+dimensiones conformadas y las tablas de hechos con claves foráneas estrictas. 
+• audit (Auditoría): Bitácora de ejecución de paquetes SSIS que almacena timestamps, 
+conteos de filas leídas, insertadas y rechazadas. 
+2.3. Modelos Dimensionales y Matriz Bus de Negocio 
+2.3.1. Fundamentación Conceptual: 
+El modelado dimensional estructura los datos en Tablas de Hechos (que contienen 
+métricas numéricas de eventos de negocio) y Tablas de Dimensiones (que contienen el contexto 
+descriptivo: quién, cuándo, dónde y por qué). Los diseños analíticos estándar abarcan esquemas 
+estrella, copos de nieve y constelaciones de hechos (Fact Constellation), siendo esta última la 
+recomendada cuando coexisten múltiples procesos que comparten entidades de referencia 
+comunes (Salazar Alberto et al., 2024). 
+2.3.2. Aplicación y Decisión de Ingeniería en el Proyecto: 
+Se implementa un esquema de Constelación de Hechos (Fact Constellation). Esta 
+decisión es imperativa porque el proceso analítico modela dos eventos de naturaleza y 
+periodicidad distintas: el progreso académico transaccional (créditos y notas continuas) y la 
+--- PÁGINA 18 ---
+ 
+inferencia predictiva de Machine Learning (probabilidades continuas y clústeres asignados). 
+Unificarlos en una sola tabla violaría el principio de granularidad de la base de datos. 
+Tabla 10 
+Matriz Bus de Negocio (Procesos vs. Dimensiones Conformadas) 
+Proceso de Negocio / Tabla de 
+Hechos 
+DimEstudi
+ante 
+DimCurs
+o 
+DimTie
+mpo 
+DimEtap
+a 
+DimPerfilSoci
+oec 
+DimInstitu
+cion 
+1. Rendimiento Académico 
+(dw.FactProgreso) 
+X X X X X — 
+2. Inferencia y Alerta de IA 
+(dw.FactPrediccion) 
+X — X X X — 
+3. Contexto Nacional SUNEDU 
+(dw.FactContextoNac) 
+— — X — X X 
+ 
+Nota: DimEstudiante, DimTiempo, DimEtapa y DimPerfilSocioec son dimensiones 
+conformadas, permitiendo consultas cruzadas (Drill-across) entre el desempeño real del 
+estudiante y su probabilidad predicha de deserción. 
+2.4. Datos, Información y Conocimiento (Jerarquía Cognitiva) 
+2.4.1. Fundamentación Conceptual: 
+En los marcos contemporáneos de analítica institucional universitaria (Ali, 2026; Hidayat 
+et al., 2026), el valor de los datos se conceptualiza como una progresión estructural continua: los 
+Datos crudos carecen de significado autónomo; la Información contextualiza dichos datos dentro 
+del plan de estudios; el Conocimiento descubre patrones predictivos y factores de riesgo 
+multivariables mediante algoritmos de inteligencia artificial; y la Decisión aplica dicho 
+conocimiento para orientar intervenciones tutoriales oportunas. 
+2.4.2. Aplicación Concreta en el Proyecto (Variables Reales): 
+La transformación se evidencia a través de variables reales del sistema: 
+ 
+ 
+--- PÁGINA 19 ---
+ 
+Tabla 11 
+Aplicación de la Jerarquía Cognitiva con Variables Reales del Proyecto 
+Nivel 
+Cognitivo 
+Definición Teórica Manifestación Real en el Proyecto Componente 
+Tecnológico 
+Dato Símbolos y valores 
+numéricos crudos 
+desprovistos de contexto. 
+Registros numéricos crudos en archivo 
+CSV: Curricular_units_1st_sem_approved 
+= 0, Curricular_units_1st_sem_grade = 
+0.0, Debtor = 1. 
+Archivo transaccional 
+data.csv / 
+stg.Staging_Estudiante. 
+Información Datos procesados, limpios 
+y estructurados con 
+significado de negocio. 
+En el DataMart, el registro indica un 
+alumno de Ingeniería con Ratio de 
+Eficiencia Crediticia REC = 0% y deuda 
+económica en etapa S1. 
+dw.FactProgreso 
+enlazada a dw.DimEtapa 
+y dw.DimPerfilSocioec. 
+Conocimiento Patrones inferidos, 
+modelos causales y 
+probabilidades predictivas. 
+El modelo Random Forest asigna una 
+probabilidad P(Dropout) = 84.7% y K-
+Means lo clasifica en Clúster 1: Perfil 
+Socioeconómico Crítico. 
+Pipeline de ML en 
+Python 
+(dw.FactPrediccion). 
+Decisión 
+Institucional 
+Intervención humana y 
+juicio tutorial basado en 
+datos. 
+El Comité de Tutoría y Bienestar aprueba 
+un plan inmediato: asignación de Beca 
+Comedor, reprogramación de matrícula y 
+tutor de pares. 
+Paneles de Acción y 
+Simulación What-If en 
+Power BI. 
+ 
+2.5. Dimensiones, Medidas, Jerarquías y Granularidad 
+2.5.1. Fundamentación Conceptual: 
+Declarar formalmente el nivel de granularidad es la base del diseño de datos analíticos 
+(Salazar Alberto et al., 2024). Las medidas se clasifican en:  
+(1) Totalmente Aditivas (sumables en todas las dimensiones),  
+(2) Semiaditivas (sumables en ciertas dimensiones pero no a través del tiempo)  
+(3) No Aditivas (porcentajes, promedios y ratios, que en lenguajes analíticos como DAX 
+deben calcularse como cocientes de sumas). 
+2.5.2. Aplicación y Declaración Formal de Grano: 
+• Grano de dw.FactProgreso: 'Un registro individual por cada estudiante evaluado en una 
+asignatura y etapa académica específica (M1 o M2) dentro de un semestre lectivo.' 
+• Grano de dw.FactPrediccion: 'Un registro individual por cada estudiante evaluado por 
+--- PÁGINA 20 ---
+ 
+un modelo analítico en un hito temporal específico (M1 Ingreso vs. M2 Cierre Semestre 
+1).' 
+Tabla 12 
+Catálogo de Medidas y Comportamiento de Aditividad en DAX 
+Tabla de Hechos Medida Numérica Tipo de Aditividad Fórmula de Agregación DAX / 
+MDX 
+dw.FactProgreso creditos_matriculados Totalmente Aditiva SUM(dw.FactProgreso[creditos_
+matriculados]) 
+dw.FactProgreso creditos_aprobados Totalmente Aditiva SUM(dw.FactProgreso[creditos_a
+probados]) 
+dw.FactProgreso Ratio de Eficiencia Crediticia 
+(REC) 
+No Aditiva DIVIDE(SUM([creditos_aprobado
+s]), 
+SUM([creditos_matriculados]), 0) 
+* 100 
+dw.FactProgreso Promedio Vigesimal 
+Ponderado 
+No Aditiva DIVIDE(SUM([nota_vigesimal_x
+_creditos]), 
+SUM([creditos_matriculados]), 0) 
+dw.FactPrediccion probabilidad_dropout Semiaditiva AVERAGE(dw.FactPrediccion[pr
+ob_dropout]) 
+dw.FactPrediccion Total Alumnos Riesgo Crítico Totalmente Aditiva CALCULATE(DISTINCTCOUN
+T([estudiante_key]), 
+[prob_dropout] >= 0.60) 
+ 
+Jerarquías de Análisis:  
+(1) Jerarquía Institucional: Tipo_Gestion -> Universidad -> Facultad -> Escuela 
+Profesional.  
+(2) Jerarquía Temporal de Evaluación: Periodo_Lectivo -> Semestre -> 
+Etapa_Evaluacion (M1 / M2). 
+2.6. Cubos OLAP y Procesamiento Multidimensional (SSAS) 
+2.6.1. Fundamentación Conceptual: 
+El Procesamiento Analítico en Línea (OLAP) permite consultas complejas de agregación 
+instantánea mediante el precalculo multidimensional de medidas sobre dimensiones indexadas 
+(Salazar Alberto et al., 2024; Martín-Caro Álamo & Segovia-García, 2025). Las arquitecturas 
+--- PÁGINA 21 ---
+ 
+estándar son: MOLAP (Multidimensional OLAP, almacenamiento y agregación en cubos de alto 
+rendimiento), ROLAP y HOLAP. Las 5 operaciones analíticas esenciales son: Roll-up 
+(agregación ascendente), Drill-down (desglose descendente), Slice (filtrado en una dimensión), 
+Dice (corte simultáneo en dos o más dimensiones) y Pivot (rotación de ejes de análisis). 
+2.6.2. Aplicación y Mapeo con Preguntas de Negocio: 
+Se implementa un Cubo Multidimensional en Microsoft SQL Server Analysis Services 
+(SSAS) bajo modo MOLAP, respondiendo directamente a las preguntas de negocio 
+institucionales: 
+Tabla 13 
+Mapeo de Operaciones OLAP con Preguntas de Negocio Institucionales 
+Operación OLAP Pregunta de Negocio Resuelta Dimensiones y Jerarquías Involucradas 
+Roll-up PN-01: ¿Cuál es la tasa de deserción 
+comparada entre escuelas de la FIEI? 
+Agregación desde DimCurso[Escuela] hacia 
+DimInstitucion[Facultad]. 
+Drill-down PN-02: En Informática, ¿cuáles asignaturas 
+concentran la mayor reprobación? 
+Desglose desde DimCurso[Escuela] hacia 
+DimCurso[NombreAsignatura]. 
+Slice PN-06: ¿Qué porcentaje de estudiantes con 
+beca logran promedio aprobatorio? 
+Corte fijo sobre DimEstudiante[Tiene_Beca = 
+'Sí']. 
+Dice PN-03 y PN-08: ¿Cuántos estudiantes 
+trabajadores (> 20 hrs) están en riesgo crítico 
+en M1? 
+Cruce simultáneo: DimPerfilSocioec[Horas > 
+20] x DimEtapa[M1] x DimResultado[Riesgo 
+Crítico]. 
+Pivot PN-04: Comparar la distribución de clústeres 
+de riesgo frente a las 4 escuelas. 
+Eje filas: DimPerfilSocioec[Cluster_KMeans]; 
+Eje columnas: DimCurso[Escuela]. 
+ 
+2.7. Indicadores de Gestión y KPIs Institucionales 
+2.7.1. Fundamentación Conceptual: 
+Un KPI institucional es una medida cuantitativa formalmente vinculada a los objetivos 
+estratégicos de permanencia y calidad universitaria, dotada de fórmula matemática, meta 
+cuantitativa, semaforización y responsable en la matriz de gestión (Martín-Caro Álamo & 
+Segovia-García, 2025; Ochoa Cedeño et al., 2024). 
+ 
+ 
+--- PÁGINA 22 ---
+ 
+2.7.2. Fichas Técnicas de los 8 KPIs Oficiales del Sistema: 
+Tabla 14 
+Catálogo de Indicadores Clave de Rendimiento (KPIs) del Sistema 
+Código y Nombre de 
+KPI 
+Fórmula Matemática Formal Meta y Umbral de 
+Semáforo 
+Responsable 
+RACI 
+KPI-01: Tasa de Abandono 
+Histórico (TA) 
+TA = (Estudiantes Dropout / Total 
+Matriculados) * 100 
+<= 18.0% (Verde <= 18% | 
+Amarillo 18.1%-25% | Rojo 
+> 25%) 
+Director de Escuela 
+Profesional 
+KPI-02: Ratio de 
+Eficiencia Crediticia 
+(REC) 
+REC = (Suma Creditos Aprobados 
+/ Suma Creditos Matriculados) * 
+100 
+>= 85.0% (Verde >= 85% | 
+Amarillo 70%-84.9% | Rojo 
+< 70%) 
+Comité de Tutoría 
+y Consejería 
+KPI-03: Rendimiento 
+Vigesimal Promedio 
+(RVP) 
+RVP = Suma(Nota Vigesimal [0-
+20] * Creditos) / Total Creditos 
+Evaluados 
+>= 13.5 pts (Verde >= 13.5 | 
+Amarillo 11.0-13.4 | Rojo < 
+11.0) 
+Docentes Tutores y 
+Directores 
+KPI-04: Índice de Riesgo 
+Crítico por IA (IRC) 
+IRC = Conteo de estudiantes con 
+P(Dropout) >= 0.60 
+<= 15.0% del total de la 
+matrícula activa 
+Comité de Tutoría / 
+Plataforma BI+IA 
+KPI-05: Recall en 
+Detección de Dropout 
+Recall = VP_Dropout / 
+(VP_Dropout + FN_Dropout) 
+>= 75.0% en M1 (Ingreso) y 
+>= 82.0% en M2 (Cierre S1) 
+Equipo de 
+Ingeniería de Datos 
+y ML 
+KPI-06: Cobertura Tutorial 
+a Críticos (CAT) 
+CAT = (Estudiantes Críticos con 
+Tutor / Total Estudiantes Críticos) 
+* 100 
+100.0% (Verde 100% | 
+Amarillo 80%-99% | Rojo < 
+80%) 
+Coordinador de 
+Tutoría FIEI 
+KPI-07: Cohesión de 
+Perfiles (Silhouette) 
+s(i) = (b(i) - a(i)) / max(a(i), b(i)); 
+media s_bar 
+s_bar >= 0.35 (Estructura de 
+clustering sustancial) 
+Módulo de 
+Personalización 
+Python 
+KPI-08: Retención 
+Simulada What-If (EPR) 
+EPR = Suma[P(Dropout) >= U] * 
+Cobertura_Tutor * 
+Efectividad_Intervención 
+Maximizar estudiantes 
+retenidos bajo presupuesto 
+Decanato FIEI y 
+Comité de Calidad 
+ 
+2.8. Machine Learning e Inteligencia Artificial Educativa 
+2.8.1. Fundamentación Conceptual: 
+La Minería de Datos Educativa y la Analítica del Aprendizaje contemporánea extraen 
+patrones ocultos en la trayectoria estudiantil (Ali, 2026; Almalawi et al., 2026). El problema 
+institucional no es predecir una nota continua marginal (regresión lineal), sino clasificar al 
+--- PÁGINA 23 ---
+ 
+estudiante en un estado de riesgo accionable (Dropout, Enrolled, Graduate), formulándose 
+rigurosamente como Clasificación Supervisada Multiclase. 
+Comparación de Algoritmos: La literatura empírica universitaria reciente respalda la 
+comparación técnica de dos familias algorítmicas (Aparicio-Montenegro et al., 2026; Realinho et 
+al., 2022; Aco Tito et al., 2023; Contreras-Bravo et al., 2022; Torres et al., 2023):  
+(1) Regresión Logística Multinomial como modelo lineal paramétrico de referencia por 
+su rapidez e interpretabilidad probabilística  
+(2) Random Forest Classifier como ensamble no lineal que promedia árboles de decisión 
+independientes mediante Bagging, capturando interacciones multivariables complejas sin 
+sobreajustar. Para la segmentación no supervisada se utiliza K-Means Clustering. 
+2.8.2. Protocolo de Validación, Desbalance y Métrica Prioritaria: 
+• Desbalance de Clases: La deserción es una clase minoritaria; la Exactitud (Accuracy) resulta 
+engañosa en estos contextos. 
+• Métrica Prioritaria de Negocio: Recall de la clase Dropout. En retención universitaria, el costo 
+de un Falso Negativo (un alumno que desertará y no es advertido) es crítico, provocando el 
+abandono definitivo. En contraste, el costo de un Falso Positivo (citar preventivamente a un 
+alumno que no iba a desertar) es pedagógicamente inocuo. Por ello, la prioridad de ingeniería es 
+maximizar el Recall de Dropout manteniendo un F1-macro equilibrado. 
+• Blindaje contra Fuga de Datos (Data Leakage): Ninguna variable posterior a la etapa evaluada 
+ni el target final ingresan como predictores en M1 o M2. 
+• Validación Cruzada y Dashboard Completo: Se utiliza Stratified K-Fold (k=5). Las 
+probabilidades de toda la cohorte (4,424 casos) se calculan mediante predicciones fuera de 
+muestra (out-of-fold), asegurando que el tablero en Power BI muestre a toda la población sin 
+violar la integridad estadística. 
+2.9. Evaluación Adaptativa, Analítica del Aprendizaje y Personalización 
+2.9.1. Fundamentación Conceptual y Delimitación Operativa: 
+La literatura técnica contemporánea en analítica formativa destaca la efectividad de los 
+sistemas de evaluación adaptativa y prescripción temprana basados en cohortes longitudinales 
+--- PÁGINA 24 ---
+ 
+(Almalawi et al., 2026; Hidayat et al., 2026). Ante la naturaleza del proyecto, se formalizan las 
+Definiciones Operativas: 
+"Evaluación Adaptativa (Decisión D2): Proceso analítico dinámico de re-evaluación del 
+riesgo académico ejecutado en etapas sucesivas (M1 Ingreso vs. M2 Cierre de Primer 
+Semestre), ajustando el pronóstico conforme se consolida el rendimiento real del alumno."  
+"Personalización del Aprendizaje (Decisión D3): Segmentación de la población estudiantil en 
+perfiles multidimensionales homogéneos mediante clustering no supervisado (K-Means), 
+articulada con una matriz institucional de recomendaciones pedagógicas y tutoriales 
+diferenciadas por nivel de riesgo."  
+2.9.2. Matriz de Personalización según Clúster Socioacadémico 
+Tabla 15 
+Matriz de Prescripción de Intervenciones Tutoriales según Clúster 
+Clúster Identificado Rasgos Socioacadémicos 
+Clave 
+Diagnóstico Causal Prescripción Tutorial 
+Personalizada 
+Clúster 1: 
+Vulnerabilidad 
+Socioeconómica 
+Bajos ingresos familiares, 
+padres sin educación superior, 
+condición deudora. 
+Vulnerabilidad 
+económica de 
+sostenimiento. 
+Priorización en Beca 
+Comedor, carné universitario 
+de medio pasaje, asistencia de 
+Bienestar y subsidio de útiles. 
+Clúster 2: Sobrecarga 
+Laboral 
+Jornada laboral > 20 horas 
+semanales, mayor edad 
+promedio, menor 
+presencialidad. 
+Incompatibilidad de 
+tiempo estudio-trabajo. 
+Reorientación de matrícula 
+balanceada (reducción a 16 
+créditos), acceso a clases 
+grabadas y tutoría nocturna 
+asincrónica. 
+Clúster 3: Rezago en 
+Ciencias Básicas 
+Adecuado respaldo 
+socioeconómico pero notas 
+bajas en Cálculo, Álgebra y 
+Física. 
+Déficit de competencias 
+en ciencias básicas. 
+Asignación obligatoria a 
+talleres de nivelación intensiva 
+en matemáticas y 
+emparejamiento con tutores de 
+pares de ciclos superiores. 
+ 
+Consideraciones Éticas y Privacidad:  
+(1) Las alertas se presentan como indicadores de necesidad de apoyo, erradicando cualquier uso 
+discriminatorio o punitivo  
+(2) Se aplica anonimización de identificadores y supresión de celdas con frecuencias menores a 5 
+(k >= 5) protegiendo la identidad del estudiante bajo la Ley N.° 29733. 
+--- PÁGINA 25 ---
+ 
+2.10. Procesos ETL y Calidad de Datos (Visual Studio SSIS) 
+2.10.1. Fundamentación Conceptual: 
+Los pipelines de Extracción, Transformación y Carga (ETL) constituyen el componente 
+neurálgico para garantizar la consistencia, integridad y limpieza de los datos que alimentan el 
+DataMart (Salazar Alberto et al., 2024; Realinho et al., 2022). En Visual Studio SSIS se 
+combinan tareas de Control Flow (orquestación, transacciones y ejecución de scripts Python) y 
+tareas de Data Flow (transformaciones en memoria y carga masiva a SQL Server). 
+2.10.2. Catálogo de Reglas de Calidad Implementadas en SSIS: 
+Tabla 16 
+Catálogo de Reglas de Calidad y Transformación en SSIS 
+N° 
+Regla 
+Nombre de Regla de 
+Calidad 
+Problema de Origen 
+Detectado 
+Tratamiento Técnico en 
+SSIS 
+Artefacto Destino 
+RC-01 Estandarización de 
+Codificación 
+Caracteres especiales 
+(tildes/ñ) en UTF-8 vs 
+ANSI. 
+Configurar CodePage = 1252 
+(ANSI - Latino) en Flat File 
+Connection Manager. 
+Paquetes de Staging 
+SSIS. 
+RC-02 Normalización 
+Vigesimal 
+Notas UCI en escala 
+portuguesa (0 a 20 con 
+10 aprobatorio). 
+Validar consistencia con 
+escala peruana UNFV (0 a 20 
+con 11 aprobatorio). Campo 
+flag es_aprobado. 
+dw.FactProgreso. 
+RC-03 Tratamiento de 
+Calificación Cero 
+Notas = 0 con 0 
+evaluaciones rendidas 
+sesgan promedios. 
+Derivación condicional: 
+tipificar como 'No se presentó 
+/ Abandono no formal' si eval 
+= 0. 
+Columna Derivada 
+SSIS. 
+RC-04 Miembro Desconocido 
+(-1) 
+Valores nulos o claves 
+foráneas huérfanas en 
+dimensiones. 
+Crear fila clave -1 ('No 
+Especificado' / 'Desconocido') 
+en cada dimensión 
+conformada. 
+Dimensiones dw. 
+RC-05 Dimensiones de 
+Cambio Lento 
+Evolución de 
+condición laboral o 
+beca durante el 
+semestre. 
+Implementar SCD Tipo 1 
+(Sobrescribir) y Tipo 2 
+(Versionamiento con fechas de 
+vigencia). 
+Componente SCD en 
+SSIS. 
+RC-06 Conciliación de Cargas Pérdida silenciosa de 
+registros por errores de 
+casteo. 
+Control de balance en 
+audit.Auditoria_Carga: Filas 
+Origen = Filas Insertadas + 
+Filas Rechazadas. 
+audit.Auditoria_Carg
+a. 
+--- PÁGINA 26 ---
+ 
+Referencias Bibliográficas 
+Aco Tito, A. E., Hancco Condori, B. O., & Pérez Vera, Y. (2023). Análisis comparativo de Técnicas de 
+Machine Learning para la predicción de casos de deserción universitaria. RISTI - Revista Ibérica 
+de Sistemas e Tecnologias de Informação, 51, 84–98. https://doi.org/10.17013/risti.51.84-98 
+Ali, G. M. (2026). An explainable AI framework for multimodal student performance prediction and 
+institutional decision support at PSAU. Decision Science Letters, 15(6), 995–1012. 
+https://doi.org/10.5267/j.dsl.2026.8.010 
+Almalawi, A., Soh, B., Li, A., Alanazi, A., & Samra, H. (2026). An exploratory feasibility study of 
+adaptive assessment: a multivariate, data-driven approach to formative evaluation. Frontiers in 
+Education, 11, Article 1849701. https://doi.org/10.3389/feduc.2026.1849701 
+Angulo Quiñonez, A. Á. (2022). La autoestima, su relación con el rendimiento académico y la deserción 
+universitaria. Sapienza: International Journal of Interdisciplinary Studies, 3(6), 514–529. 
+https://doi.org/10.51798/sijis.v3i6.514 
+Aparicio-Montenegro, P., Esparza Silva, M. R., Huapaya Sotero, A., Garcia-Alvarez, M. Y., & De La 
+Cruz Garcia, A. (2026). Predictive model based on machine learning for the early identification 
+of student dropout in a public university. Proceedings of the 24th LACCEI International Multi-
+Conference for Engineering, Education, and Technology, 1–10. 
+https://doi.org/10.18687/LACCEI2026.1.1.721 
+Barrera-Liévano, J. A., Barrera-Liévano, D. C., Beltrán-Virgüez, J. E., & Castillo-Sánchez, M. (2025). 
+Correlación entre variables de deserción universitaria en programas en modalidad a distancia en 
+Colombia. Estudios Pedagógicos, 51(2), 161–175. https://doi.org/10.4067/S0718-
+07052025000200161 
+Castro-Martínez, J. A., & Machuca-Téllez, G. (2023). La deserción universitaria en América Latina: una 
+perspectiva ecológica. Estudios Pedagógicos, 49(2), 87–108. https://doi.org/10.4067/S0718-
+07052023000200087 
+Contreras-Bravo, L. E., Nieves-Pimiento, N., & Fuentes-Contreras, J. A. (2022). Predicción del 
+Rendimiento Académico a Nivel Universitario Mediante Mecanismos de Machine Learning y 
+Métodos Supervisados. Ingeniería, 27(3), Article e19514. 
+https://doi.org/10.14483/23448393.19514 
+González, J. A., Carvajal, C. M., Rebolledo, R. A., & González, F. A. (2024). Grado de logro de la 
+competencia digital (GLCD) en relación a la deserción de estudiantes universitarios. Formación 
+Universitaria, 17(3), 153–166. https://doi.org/10.4067/S0718-50062024000300153 
+Hidayat, N., Afuan, L., & Jannah, H. R. (2026). Prescriptive Learning Analytics for Student Dropout: 
+Integrating Temporal Velocity and Counterfactual Explanations in Longitudinal Data. Journal of 
+Computing Theories and Applications, 3(1), Article 15920. https://doi.org/10.62411/jcta.15920 
+Martín-Caro Álamo, E., & Segovia-García, N. (2025). Analítica de Aprendizaje y Retención Estudiantil: 
+un Estudio Longitudinal en Educación Superior Virtual. Revista Fuentes, 27(1), 1–12. 
+https://doi.org/10.12795/revistafuentes.2025.27592 
+--- PÁGINA 27 ---
+ 
+Navarro Peñaranda, J. A., Pérez Castro, J. D., & Rodríguez Rojas, L. A. (2025). Determinants of 
+University Dropout: A Study in the Engineering Faculty of a Public University in Colombia. 
+Proceedings of the 23rd LACCEI International Multi-Conference for Engineering, Education, and 
+Technology, 1–8. https://doi.org/10.18687/LACCEI2025.1.1.2431 
+Ochoa Cedeño, E. G., Rodríguez Magaña, A., & García Bejar, L. (2024). Implementación y Evaluación 
+del Programa de Mejora Académica en una Universidad Privada del Occidente de México. 
+European Public & Social Innovation Review, 9(1), 45–65. https://doi.org/10.31637/epsir-2024-
+555 
+Parra-Sánchez, J. S., Torres Pardo, I. D., & Martínez de Merino, C. Y. (2023). Factores explicativos de la 
+deserción universitaria abordados mediante inteligencia artificial. Revista Electrónica de 
+Investigación Educativa (REDIE), 25, Article e18. 
+https://doi.org/10.24320/REDIE.2023.25.E18.4455 
+Realinho, V., Machado, J., Baptista, L., & Martins, M. V. (2022). Predicting Student Dropout and 
+Academic Success. Data, 7(11), Article 146. https://doi.org/10.3390/data7110146 
+Romero-Tenorio, J.-M., Riccardi, D., & de Yzaguirre, F. (2026). Teatro del oprimido y sociograma. 
+Acción colectiva contra la deserción universitaria. Revista Iberoamericana de Educación 
+Superior, 17(49), 112–131. https://doi.org/10.22201/iisue.20072872e.2026.49.1985 
+Salazar Alberto, R. A., Guzman Aquije, E. H., & Lozada Flores, R. M. (2024). Application of artificial 
+intelligence to predict academic performance in order to prevent dropout in high school students: 
+Systematic Literature Review. Proceedings of the 22nd LACCEI International Multi-Conference 
+for Engineering, Education, and Technology, 1–8. 
+https://doi.org/10.18687/LACCEI2024.1.1.1426 
+Schmidt, B. J. (2023). Factores que influyen en la deserción universitaria: El caso de una universidad 
+estatal chilena. Revista Portuguesa de Educação, 36(1), Article e23002. 
+https://doi.org/10.21814/rpe.23401 
+Torres, H. V., et al. (2023). Modelo de clasificación para la deserción estudiantil en una universidad 
+pública del Perú. Salud, Ciencia y Tecnología - Serie de Conferencias, 2(2), Article 175. 
+https://doi.org/10.56294/sctconf2023175 
+Vega Velásquez, M., Bastardo Contreras, X., & Giraldo de López, M. (2025). Factores Socioemocionales 
+y Deserción Universitaria. Análisis correlacional en grupos desertores en los años 2021 y 2022. 
+European Public & Social Innovation Review, 10(1), 1–14. https://doi.org/10.31637/epsir-2025-
+1173 

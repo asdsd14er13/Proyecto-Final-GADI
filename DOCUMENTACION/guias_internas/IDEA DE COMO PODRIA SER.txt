@@ -1,0 +1,164 @@
+¡Tranquilo Robert! Tu enfoque es 100% correcto y muy sensato. En proyectos de software e ingeniería de datos, primero se construye y se prueba la solución técnica hasta el punto que se domina (en su caso, hasta el modelo de Machine Learning en Python y la base de datos SQL), y recién cuando todo corre y bota números reales, se redacta el informe/paper.   
+MD
++ 1
+
+Además, no te preocupes por Power BI todavía: el modelo de Machine Learning en Python no "chapa" datos de Power BI. Es al revés:   
+MD
+
+Tu Python agarra los CSVs.   
+MD
+
+Los limpia, transforma y entrena el modelo.   
+MD
+
+Los guarda en la Base de Datos SQL Server (DataMart).   
+MD
+
+En el futuro (cuando les enseñen), Power BI solo se conecta a SQL Server para leer lo que ustedes ya calcularon.   
+MD
+
+Aquí tienes la explicación en sencillo y en peruano de cómo encarar esta entrega, la arquitectura/modelo adecuado, la "peruanización" de la data y el mensaje exacto para mandarle a tu pata.
+
+1. ¿Cómo se van a conectar los datos sin usar Power BI aún? (Conceptos de clase)
+Tu profesor les enseñó términos clave. Aquí ves cómo encaja cada uno en su avance actual:
+
+Data Lake / CSVs Sueltos (Entrada): Los archivos data.csv de UCI y los CSVs de TUNI son sus fuentes crudas.   
+MD
++ 1
+
+ETL (Extracción, Transformación y Carga): Es el código en Python que va a leer los CSVs, va a "peruanizar" las notas (pasarlas a escala 0 a 20) y va a cargar la data limpia a SQL.   
+MD
+
+OLTP vs. OLAP: Un sistema OLTP es la base transaccional de un sistema diario (ej. la matrícula o sistema de notas de la universidad). Como no tenemos acceso a la base transaccional interna de la universidad, crearemos directamente un DataMart / Data Warehouse (OLAP) en SQL Server para análisis.   
+MD
++ 2
+
+DataMart (Base de Datos Analítica): Es una base de datos diseñada para consultar métricas rápido mediante un Modelo Dimensional (Tablas de Hechos y Tablas de Dimensiones).   
+MD
+
+Machine Learning (IA): Tu código de Python lee del DataMart, hace la predicción de riesgo (ej: "85% probabilidad de abandono") y guarda esa predicción de vuelta en SQL Server.   
+MD
+
+2. ¿Qué modelo dimensional usar: Estrella o Constelación?
+Para este proyecto, lo más recomendado, directo y elegante es un Modelo en Estrella (Star Schema).   
+MD
+
+¿Por qué Estrella y no Constelación?
+Constelación se usa cuando tienes múltiples tablas de hechos para procesos de negocio totalmente distintos (ej. compras, ventas, nómina, inventario cruzados).   
+MD
+
+Estrella es ideal cuando tienes un proceso central de negocio (en este caso: Seguimiento del Rendimiento Académico y Evaluación de Riesgo del Estudiante).   
+MD
+
+Diseño del Esquema Estrella Sugerido para SQL Server:
+Tabla de Hechos Central (FactProgresoAcademico):
+
+Claves (FKs): id_estudiante, id_carrera, id_etapa (Ingreso vs. Cierre de 1er Ciclo), id_periodo.
+
+Métricas/Medidas: Unidades matriculadas, unidades aprobadas, Promedio General (escala 0 a 20), Edad.
+
+Tabla de Hechos de IA (FactPrediccionRiesgo):
+
+Campos: id_estudiante, id_etapa, probabilidad_abandono (0.0 a 1.0), categoria_predicha (Riesgo Alto, Medio, Bajo), accion_sugerida (ej. "Enviar a tutoría").   
+MD
+
+Tablas de Dimensiones:
+
+DimCarrera (sacada de TUNI: Ingeniería de Sistemas, Administración, etc.).   
+MD
+
+DimEtapaEvaluacion (Ingreso, Cierre del Primer Ciclo).   
+MD
+
+DimResultadoReal (Continúa, Abandono, Egreso).   
+MD
+
+3. ¿Cómo peruanizar las notas de la UCI? (Relevancia técnica)
+Lo que mencionaste sobre la escala y medición peruana tiene 100% de relevancia técnica.   
+MD
+
+El problema: El dataset de la UCI (Portugal) maneja notas en escalas europeas o créditos con aprobaciones distintas (por ejemplo, notas de 0 a 20 pero con criterios de corte y promedios europeos).   
+MD
+
+La solución (Peruanización en Python):
+
+Ajuste de Escala Vigesimal (0 a 20): En Python, reescalan matemáticamente las variables de notas (Curricular units 1st sem (grade)) para que mapeen exactamente al rango 0.00 a 20.00.   
+MD
+
+Regla de Aprobación Peruana: Ajustan las variables para que el punto de corte aprobatorio sea 11 (o 10.5).   
+MD
+
+Catálogo de Carreras Peruano: Reemplazan las IDs de las carreras portuguesas del dataset por los nombres de carreras universitarias peruanas reales sacadas del dataset de TUNI/SUNEDU (ejemplo: Ingeniería de Sistemas, Derecho, Contabilidad).   
+MD
+
+4. El "Paso a Paso" Físico del Trabajo (Lo que deben avanzar ya)
+Dile a tu pata que el trabajo práctico se resume en estos 4 pasos técnicos concretos en la computadora:
+
+Plaintext
+[1. CSVs de UCI + TUNI]
+       ↓ (Python: Limpieza, Escala 0-20 y Mapeo de Carreras)
+[2. Tabla Staging en SQL Server]
+       ↓ (T-SQL ETL: Poblar Dimensiones y Hechos)
+[3. DataMart en Estrella (SQL Server)]
+       ↓ (Python: Carga data -> Entrena IA -> Guarda Predicciones)
+[4. Tabla de Predicciones de IA cargada en SQL Server]
+Paso 1: Preprocesamiento en Python (Jupyter Notebook)
+
+Leer el data.csv de UCI y la lista de carreras de TUNI.   
+MD
+
+Convertir las notas a la escala peruana (0 a 20).   
+MD
+
+Renombrar y filtrar columnas para dejar solo las de Ingreso y Primer Ciclo (para no hacer "trampa" con datos del 2do ciclo).   
+MD
+
+Paso 2: Crear la Base de Datos y DataMart (SQL Server)
+
+Crear la tabla Staging para subir la data limpia.   
+MD
+
+Crear las tablas de Dimensiones y la Tabla de Hechos con el Modelo en Estrella.   
+MD
+
+Correr los scripts de carga ETL (mover de Staging a las tablas en estrella).   
+MD
+
+Paso 3: Entrenar el Modelo de IA (Python - Scikit-Learn)
+
+Leer los datos procesados desde SQL Server.   
+MD
+
+Entrenar dos modelos de clasificación: Regresión Logística vs. Random Forest.   
+MD
+
+Evaluar cuál predice mejor el riesgo de abandono/reprobación usando métricas como Precision, Recall y F1-score.   
+MD
+
+Paso 4: Exportar los Resultados de IA a SQL Server
+
+Correr el modelo ganador sobre los alumnos y generar la probabilidad de riesgo y la recomendación (ej: "Riesgo Alto -> Sugerir tutoría pedagógica").   
+MD
+
+Escribir esos resultados directo en la tabla FactPrediccionRiesgo de SQL Server.   
+MD
+
+¡Con eso tienen la primera entrega completa y 100% funcional sin haber tocado Power BI ni haber perdido tiempo en redactar el Word todavía!
+
+   
+MD
+
+5. Mensaje directo para mandarle a tu pata (Copia y pega)
+"Mano, estuve cuadrando la arquitectura y el plan para el avance. Olvídate del informe en Word (paper) por ahora y tampoco nos preocupemos por Power BI, porque el profe todavía no lo pide y la IA no necesita de Power BI para funcionar.
+
+Lo que tenemos que armar en cancha es esto:
+
+Peruanizar los datos (Python): Agarramos el CSV de la UCI y los datos de TUNI. Ajustamos las notas en Python para que estén en la escala peruana de 0 a 20 (aprobado con 11) y reemplazamos los nombres de las carreras por carreras peruanas de TUNI (Sistemas, Administración, etc.).
+
+Crear el DataMart (SQL Server): Armamos un Modelo en Estrella (Star Schema), que es lo ideal para este proceso. Creamos la tabla Staging, las tablas de Dimensiones (Carrera, Etapa, Resultado) y la Fact de Progreso Académico.
+
+Entrenar la IA (Python con Scikit-learn): Leemos la data de SQL, entrenamos un Random Forest vs Regresión Logística para predecir qué alumnos están en riesgo al cierre del 1er ciclo y generamos las reglas de apoyo (ej: 'Recomendar tutoría').
+
+Guardar predicciones en SQL: Subimos la tabla de resultados del modelo de vuelta a SQL Server.
+
+Teniendo la base de datos cargada, las tablas en estrella y el notebook de Python corriendo la IA, ya tenemos el prototipo técnico listo para mostrarle al profe. ¡Confirmame para arrancar por la limpieza en Python!"

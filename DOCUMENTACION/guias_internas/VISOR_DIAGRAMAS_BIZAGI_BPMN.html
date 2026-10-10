@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de Modelos BPMN 2.0 (Bizagi Modeler) - AS-IS vs TO-BE | UNFV FIEI</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+      --lane-bg-1: #1e293b;
+      --lane-bg-2: #0f172a;
+      --task-user: #1e3a8a;
+      --task-manual: #78350f;
+      --task-service: #14532d;
+      --task-rule: #581c87;
+      --pain-red: #ef4444;
+      --gain-green: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 24px;
+    }
+    .header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .header h1 { font-size: 24px; color: #38bdf8; margin-bottom: 8px; }
+    .header p { color: var(--text-muted); font-size: 14px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .badge-unfv { background: #ea580c; color: white; }
+    .badge-bpmn { background: #2563eb; color: white; }
+    
+    .nav-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      padding: 12px 24px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: #0284c7;
+      border-color: #38bdf8;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* BPMN Pool Container */
+    .bpmn-pool {
+      border: 2px solid #64748b;
+      border-radius: 8px;
+      background: #090d16;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    .pool-header {
+      background: #1e293b;
+      padding: 12px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      border-bottom: 2px solid #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pool-header span.tag {
+      font-size: 12px;
+      background: #334155;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /* Swimlanes */
+    .swimlane {
+      display: flex;
+      border-bottom: 1px solid #334155;
+      min-height: 140px;
+      position: relative;
+    }
+    .swimlane:last-child { border-bottom: none; }
+    .lane-title {
+      width: 170px;
+      min-width: 170px;
+      background: #172033;
+      border-right: 2px solid #475569;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      color: #93c5fd;
+    }
+    .lane-content {
+      flex: 1;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      overflow-x: auto;
+      background: rgba(15, 23, 42, 0.6);
+    }
+
+    /* BPMN Elements */
+    .bpmn-start {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: #14532d;
+      border: 3px solid #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+    }
+    .bpmn-end {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: #7f1d1d;
+      border: 4px solid #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+    }
+    .bpmn-end-success {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: #064e3b;
+      border: 4px solid #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+    }
+    .bpmn-gateway {
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      background: #b45309;
+      border: 2px solid #f59e0b;
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+    }
+    .bpmn-gateway span {
+      transform: rotate(-45deg);
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .bpmn-task {
+      min-width: 180px;
+      max-width: 210px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: #1e293b;
+      border: 2px solid #475569;
+      font-size: 12.5px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .task-user { border-color: #3b82f6; background: #1e2b4d; }
+    .task-manual { border-color: #f59e0b; background: #3b2a1a; }
+    .task-service { border-color: #10b981; background: #13382c; }
+    .task-rule { border-color: #a855f7; background: #341a4a; }
+
+    .task-icon {
+      font-size: 13px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+      opacity: 0.9;
+    }
+    .arrow {
+      color: #64748b;
+      font-size: 20px;
+      user-select: none;
+    }
+
+    /* Anotaciones Bizagi */
+    .annotation-box {
+      border-left: 4px solid;
+      background: rgba(30, 41, 59, 0.9);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+      max-width: 260px;
+      min-width: 220px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .annotation-pain {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.12);
+    }
+    .annotation-pain strong { color: #f87171; display: block; margin-bottom: 2px; font-size: 13px; }
+    .annotation-gain {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
+    }
+    .annotation-gain strong { color: #4ade80; display: block; margin-bottom: 2px; font-size: 13px; }
+
+    .bizagi-legend {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-swatch { width: 16px; height: 16px; border-radius: 4px; border: 1px solid white; }
+    .instruction-card {
+      background: #1e293b;
+      border: 1px solid #0284c7;
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin-top: 20px;
+    }
+    .instruction-card h3 { color: #38bdf8; margin-bottom: 8px; }
+    .instruction-card ol { margin-left: 20px; color: #cbd5e1; font-size: 14px; }
+    .instruction-card li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <span class="badge badge-unfv">UNFV - FIEI</span>
+      <span class="badge badge-bpmn">BPMN 2.0 / BIZAGI MODELER</span>
+    </div>
+    <h1 style="margin-top: 10px;">Visualizador de Procesos de Negocio: AS-IS vs. TO-BE</h1>
+    <p>Proyecto de Tesis y Aplicación Profesional: Sistema Inteligente de Evaluación Adaptativa y Personalización del Aprendizaje Universitario.</p>
+  </div>
+
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="showTab('as-is')">🔴 DIAGRAMA 1: Modelo AS-IS (Proceso Actual con Dolores)</button>
+    <button class="tab-btn" onclick="showTab('to-be')">🟢 DIAGRAMA 2: Modelo TO-BE (Proceso Futuro con BI + IA)</button>
+  </div>
+
+  <!-- TAB AS-IS -->
+  <div id="as-is" class="tab-content active">
+    <div class="bpmn-pool">
+      <div class="pool-header">
+        <div>🏢 POOL: Proceso de Seguimiento Académico y Retención Estudiantil Tradicional (AS-IS)</div>
+        <span class="tag">Situación Actual en FIEI-UNFV</span>
+      </div>
+
+      <!-- LANE 1: ESTUDIANTE -->
+      <div class="swimlane">
+        <div class="lane-title">👤 Estudiante</div>
+        <div class="lane-content">
+          <div class="bpmn-start" title="Inicio: Semana 0">🟢</div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>1. Matrícula Regular</strong>
+            <small>Semana 0 (Solo asignaturas)</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>2. Cursar Asignaturas</strong>
+            <small>Semanas 1 a 7 (Rinde prácticas)</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>3. Examen Parcial</strong>
+            <small>Semana 8</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>4. Citación Tardía</strong>
+            <small>Semana 11/12 (Tardío)</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>5. Examen Final</strong>
+            <small>Semana 16</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-end" title="Fin de Ciclo: Deserción / Repitencia">🔴</div>
+        </div>
+      </div>
+
+      <!-- LANE 2: DOCENTE DE ASIGNATURA -->
+      <div class="swimlane">
+        <div class="lane-title">👨‍🏫 Docente de Asignatura</div>
+        <div class="lane-content">
+          <div style="width: 250px;"></div>
+          <div class="bpmn-task task-manual">
+            <span class="task-icon">✍️ Manual Task</span>
+            <strong>6. Registro Auxiliar</strong>
+            <small>Guarda notas en su Excel personal</small>
+          </div>
+          <div class="annotation-box annotation-pain">
+            <strong>⚠️ [DOLOR 1: Silos de Información]</strong>
+            Las notas se quedan en computadoras personales de los profesores; la facultad no las ve durante 7 semanas.
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>7. Digitar en Intranet</strong>
+            <small>Semanas 9 a 10 (Tras parciales)</small>
+          </div>
+          <div class="annotation-box annotation-pain">
+            <strong>⚠️ [DOLOR 2: Latencia de 10 Semanas]</strong>
+            El sistema se entera del rendimiento cuando el ciclo ya está en su fase final.
+          </div>
+        </div>
+      </div>
+
+      <!-- LANE 3: COMITE DE TUTORIA -->
+      <div class="swimlane">
+        <div class="lane-title">📋 Comité de Tutoría y Consejería</div>
+        <div class="lane-content">
+          <div style="width: 680px;"></div>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>8. Revisión Manual de Actas</strong>
+            <small>Semanas 10 a 11</small>
+          </div>
+          <div class="annotation-box annotation-pain">
+            <strong>⚠️ [DOLOR 3: Diagnóstico Post-Mortem]</strong>
+            Detección manual en papel revisando promedios aritméticos simples cuando el alumno ya reprobó.
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-gateway" title="Compuerta Exclusiva">
+            <span>X</span>
+          </div>
+          <span class="arrow">➔ [Si < 10.5]</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>9. Citar Alumno</strong>
+            <small>Semana 11/12</small>
+          </div>
+          <div class="annotation-box annotation-pain">
+            <strong>⚠️ [DOLOR 4: Intervención Tardía e Ineficaz]</strong>
+            Citación genérica; el estudiante ya tiene notas irrecuperables (04 a 07) y no hay tiempo de rescate.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="instruction-card">
+      <h3>📌 ¿Cómo dibujarlo en Bizagi Modeler en 5 minutos?</h3>
+      <ol>
+        <li>Crea 1 <strong>Pool</strong>: <code>Proceso AS-IS: Seguimiento Académico Tradicional</code>.</li>
+        <li>Inserta 3 <strong>Lanes</strong>: <code>Estudiante</code>, <code>Docente de Asignatura</code>, <code>Comité de Tutoría</code>.</li>
+        <li>Usa el <strong>Inicio verde</strong> en Estudiante, arrastra las tareas y hazles clic derecho ➔ <em>Tipo de Tarea</em>: <strong>User Task</strong> (👤) y <strong>Manual Task</strong> (✍️).</li>
+        <li>Inserta una <strong>Compuerta Exclusiva (X)</strong> con la pregunta: <code>¿Promedio < 10.5?</code>.</li>
+        <li>Agrega 4 <strong>Anotaciones de Texto</strong> (artefacto <code>[</code>) vinculadas con flechas punteadas a las tareas con los <strong>Dolores 1, 2, 3 y 4</strong>.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- TAB TO-BE -->
+  <div id="to-be" class="tab-content">
+    <div class="bpmn-pool">
+      <div class="pool-header" style="background: #143528;">
+        <div>🏢 POOL: Proceso TO-BE: Sistema Inteligente de Evaluación Adaptativa y Personalización Académica</div>
+        <span class="tag" style="background: #166534;">Propuesta Optimizada con BI + IA</span>
+      </div>
+
+      <!-- LANE 1: ESTUDIANTE -->
+      <div class="swimlane">
+        <div class="lane-title">👤 Estudiante</div>
+        <div class="lane-content">
+          <div class="bpmn-start" title="Inicio: Semana 0">🟢</div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>1. Matrícula y Ficha de Contexto</strong>
+            <small>Captura situación socioeconómica</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>2. Cursar Asignaturas con Soporte</strong>
+            <small>Semanas 1 a 15</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user" style="border-color: #4ade80;">
+            <span class="task-icon">👤 User Task</span>
+            <strong>3. Participar en Plan Asignado</strong>
+            <small>Nivelación / Tutoría / Beca</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-end-success" title="Fin Exitoso: Retención y Aprobación">🏁</div>
+        </div>
+      </div>
+
+      <!-- LANE 2: DOCENTE -->
+      <div class="swimlane">
+        <div class="lane-title">👨‍🏫 Docente de Asignatura</div>
+        <div class="lane-content">
+          <div style="width: 280px;"></div>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>4. Registro Continuo en Plataforma</strong>
+            <small>Carga notas periódicas sin silos aislados</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANE 3: PLATAFORMA BI + IA -->
+      <div class="swimlane" style="background: rgba(20, 83, 45, 0.15);">
+        <div class="lane-title" style="color: #4ade80; background: #0c2b1e;">⚙️ Plataforma BI + IA (SSIS / Python / SSAS)</div>
+        <div class="lane-content">
+          <div class="bpmn-task task-service">
+            <span class="task-icon">⚙️ Service Task</span>
+            <strong>5. Pipeline ETL (SSIS)</strong>
+            <small>Normalización a DataMart SQL Server</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-service">
+            <span class="task-icon">⚙️ Service Task</span>
+            <strong>6. Predicción Temprana (Python ML)</strong>
+            <small>Momento 1: Ingreso (Semana 2)</small>
+          </div>
+          <div class="annotation-box annotation-gain">
+            <strong>✅ [MEJORA 1: Alerta en Semana 2]</strong>
+            Diagnóstico preventivo 7 semanas antes del examen parcial mediante modelos de clasificación.
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-service">
+            <span class="task-icon">⚙️ Service Task</span>
+            <strong>7. Clustering de Perfiles (K-Means)</strong>
+            <small>Segmenta causas socioacadémicas</small>
+          </div>
+          <div class="annotation-box annotation-gain">
+            <strong>✅ [MEJORA 2: Personalización por Clúster]</strong>
+            Distingue el origen del riesgo (rezago académico vs trabajo) para no dar soluciones genéricas.
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-service">
+            <span class="task-icon">⚙️ Service Task</span>
+            <strong>8. Re-evaluación Adaptativa</strong>
+            <small>Momento 2: Parciales / Cierre S1</small>
+          </div>
+          <div class="annotation-box annotation-gain">
+            <strong>✅ [MEJORA 3: Evaluación Adaptativa]</strong>
+            El modelo recalcula el riesgo dinámicamente comparando expectativa M1 vs notas reales M2.
+          </div>
+        </div>
+      </div>
+
+      <!-- LANE 4: COMITE DE TUTORIA Y BIENESTAR -->
+      <div class="swimlane">
+        <div class="lane-title">📋 Comité de Tutoría y Bienestar</div>
+        <div class="lane-content">
+          <div style="width: 780px;"></div>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>9. Monitoreo Power BI</strong>
+            <small>Semáforo de Riesgo y Simulador What-If</small>
+          </div>
+          <div class="annotation-box annotation-gain">
+            <strong>✅ [MEJORA 4: Simulación What-If]</strong>
+            Los directivos simulan el impacto de intervenciones y proyectan cuántos alumnos serán retenidos.
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-gateway" title="Compuerta Exclusiva">
+            <span>X</span>
+          </div>
+          <span class="arrow">➔ [Si P >= 60%]</span>
+          <div class="bpmn-task task-rule">
+            <span class="task-icon">📋 Business Rule Task</span>
+            <strong>10. Prescripción Personalizada</strong>
+            <small>Aplica Matriz según Clúster</small>
+          </div>
+          <span class="arrow">➔</span>
+          <div class="bpmn-task task-user">
+            <span class="task-icon">👤 User Task</span>
+            <strong>11. Ejecución de Tutoría</strong>
+            <small>Asignación de tutor y cita oportuna</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="instruction-card" style="border-color: #22c55e;">
+      <h3 style="color: #4ade80;">📌 ¿Cómo dibujarlo en Bizagi Modeler en 5 minutos?</h3>
+      <ol>
+        <li>Crea 1 <strong>Pool</strong>: <code>Proceso TO-BE: Sistema Inteligente de Evaluación Adaptativa y Personalización</code>.</li>
+        <li>Inserta 4 <strong>Lanes</strong>: <code>Estudiante</code>, <code>Docente de Asignatura</code>, <code>Plataforma BI + IA</code>, <code>Comité de Tutoría y Bienestar</code>.</li>
+        <li>En la Lane de Plataforma BI + IA, asigna a las tareas el tipo <strong>Service Task (⚙️)</strong> (clic derecho ➔ <em>Task Type</em> ➔ <em>Service</em>).</li>
+        <li>En la Lane de Tutoría, usa una <strong>Business Rule Task (📋)</strong> para la prescripción de intervenciones personalizadas.</li>
+        <li>Agrega 4 <strong>Anotaciones de Texto en Verde</strong> vinculadas a las tareas con las <strong>Mejoras 1, 2, 3 y 4</strong>.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="bizagi-legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:#1e3a8a;"></div> <strong>User Task (👤):</strong> Tarea ejecutada por una persona en un software.</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#78350f;"></div> <strong>Manual Task (✍️):</strong> Tarea física o sin sistema (Excel local, papel).</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#14532d;"></div> <strong>Service Task (⚙️):</strong> Tarea 100% automatizada (SSIS, Python, SSAS).</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#581c87;"></div> <strong>Business Rule Task (📋):</strong> Regla de negocio automatizada o matriz de decisión.</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#b45309; transform: rotate(45deg); width:12px; height:12px;"></div> <strong>Exclusive Gateway (X):</strong> Decisión condicional sí/no.</div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      event.target.classList.add('active');
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

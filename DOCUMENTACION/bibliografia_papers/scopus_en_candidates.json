@@ -1,0 +1,2424 @@
+[
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105047616076"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105047616076?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105047616076&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105047616076&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105047616076",
+    "dc:identifier": "SCOPUS_ID:105047616076",
+    "eid": "2-s2.0-105047616076",
+    "dc:title": "An exploratory feasibility study of adaptive assessment: a multivariate, data-driven approach to formative evaluation",
+    "dc:creator": "Almalawi A.",
+    "prism:publicationName": "Frontiers in Education",
+    "prism:eIssn": "2504284X",
+    "prism:volume": "11",
+    "prism:pageRange": "1-17",
+    "prism:coverDate": "2026-08-03",
+    "prism:coverDisplayDate": "August 2026",
+    "prism:doi": "10.3389/feduc.2026.1849701",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "La Trobe University",
+        "affiliation-city": "Melbourne",
+        "affiliation-country": "Australia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "1849701",
+    "source-id": "21100935978",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037038247"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037038247?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105037038247&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105037038247&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105037038247",
+    "dc:identifier": "SCOPUS_ID:105037038247",
+    "eid": "2-s2.0-105037038247",
+    "dc:title": "Implementing Competency-Based Education with Learning Plans and Adaptive Learning in Moodle: Practical Workflows and Visual Authoring Solutions",
+    "dc:creator": "Martsenyuk V.",
+    "prism:publicationName": "Applied Sciences Switzerland",
+    "prism:eIssn": "20763417",
+    "prism:volume": "16",
+    "prism:issueIdentifier": "8",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-04-01",
+    "prism:coverDisplayDate": "April 2026",
+    "prism:doi": "10.3390/app16083854",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Bielsko-Biala",
+        "affiliation-city": "Bielsko-Biala",
+        "affiliation-country": "Poland"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "3854",
+    "source-id": "21100829268",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043131912"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043131912?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105043131912&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105043131912&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "full-text",
+        "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S277294192600092X"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105043131912",
+    "dc:identifier": "SCOPUS_ID:105043131912",
+    "eid": "2-s2.0-105043131912",
+    "dc:title": "Research on the construction of higher education ecosystem model under the empowerment development strategy of higher education",
+    "dc:creator": "Chen M.",
+    "prism:publicationName": "Systems and Soft Computing",
+    "prism:eIssn": "27729419",
+    "prism:volume": "9",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-12-01",
+    "prism:coverDisplayDate": "December 2026",
+    "prism:doi": "10.1016/j.sasc.2026.200529",
+    "pii": "S277294192600092X",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Zhanjiang University of Science and Technology",
+        "affiliation-city": "Zhanjiang",
+        "affiliation-country": "China"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "200529",
+    "source-id": "21101091183",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105034996602"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105034996602?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105034996602&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105034996602&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105034996602",
+    "dc:identifier": "SCOPUS_ID:105034996602",
+    "eid": "2-s2.0-105034996602",
+    "dc:title": "Mapping neural network research in education through bibliometric analysis",
+    "dc:creator": "Ayanwale M.A.",
+    "prism:publicationName": "Discover Education",
+    "prism:eIssn": "27315525",
+    "prism:volume": "5",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-12-01",
+    "prism:coverDisplayDate": "December 2026",
+    "prism:doi": "10.1007/s44217-026-01194-6",
+    "citedby-count": "2",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Pretoria",
+        "affiliation-city": "Pretoria",
+        "affiliation-country": "South Africa"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "re",
+    "subtypeDescription": "Review",
+    "article-number": "224",
+    "source-id": "21101262279",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105034671589"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105034671589?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105034671589&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105034671589&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105034671589",
+    "dc:identifier": "SCOPUS_ID:105034671589",
+    "eid": "2-s2.0-105034671589",
+    "dc:title": "Artificial intelligence and education: A bibliometric analysis of global research trends and future directions",
+    "dc:creator": "Mohamad A.H.H.",
+    "prism:publicationName": "Multidisciplinary Reviews",
+    "prism:eIssn": "25953982",
+    "prism:volume": "9",
+    "prism:issueIdentifier": "10",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-10-01",
+    "prism:coverDisplayDate": "October 2026",
+    "prism:doi": "10.31893/multirev.2026488",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Technology Sarawak",
+        "affiliation-city": "Sibu",
+        "affiliation-country": "Malaysia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "e2026488",
+    "source-id": "21101163455",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105051779381"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105051779381?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105051779381&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105051779381&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105051779381",
+    "dc:identifier": "SCOPUS_ID:105051779381",
+    "eid": "2-s2.0-105051779381",
+    "dc:title": "An explainable AI framework for multimodal student performance prediction and institutional decision support at PSAU",
+    "dc:creator": "Ali G.M.",
+    "prism:publicationName": "Decision Science Letters",
+    "prism:issn": "19295804",
+    "prism:eIssn": "19295812",
+    "prism:volume": "15",
+    "prism:issueIdentifier": "4",
+    "prism:pageRange": "995-1012",
+    "prism:coverDate": "2026-09-01",
+    "prism:coverDisplayDate": "Fall 2026",
+    "prism:doi": "10.5267/j.dsl.2026.8.010",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Prince Sattam Bin Abdulaziz University",
+        "affiliation-city": "Al Kharj",
+        "affiliation-country": "Saudi Arabia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100314709",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105046957160"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105046957160?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105046957160&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105046957160&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105046957160",
+    "dc:identifier": "SCOPUS_ID:105046957160",
+    "eid": "2-s2.0-105046957160",
+    "dc:title": "ROADMAP TOWARDS CHEMICAL ENGINEER 5.0 (CHEME 5.0): BIBLIOMETRIC INSIGHTS & ANALYSIS FOR SHAPING UNDERGRADUATE CURRICULA AT UNIVERSITIES",
+    "dc:creator": "Phan H.",
+    "prism:publicationName": "Proceedings of the Canadian Engineering Education Association Conference",
+    "prism:eIssn": "23715243",
+    "prism:volume": "2026",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-08-07",
+    "prism:coverDisplayDate": "7 August 2026",
+    "prism:doi": "10.24908/pceea.2026.21514",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Whiting School of Engineering",
+        "affiliation-city": "Baltimore",
+        "affiliation-country": "United States"
+      }
+    ],
+    "prism:aggregationType": "Book Series",
+    "subtype": "ch",
+    "subtypeDescription": "Book Chapter",
+    "source-id": "21101374358",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105045812876"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105045812876?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105045812876&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105045812876&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105045812876",
+    "dc:identifier": "SCOPUS_ID:105045812876",
+    "eid": "2-s2.0-105045812876",
+    "dc:title": "Artificial Intelligence-Based Pedagogical Agent in an E-Learning Environment",
+    "dc:creator": "Jansone A.",
+    "prism:publicationName": "Computers",
+    "prism:eIssn": "2073431X",
+    "prism:volume": "15",
+    "prism:issueIdentifier": "7",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-07-01",
+    "prism:coverDisplayDate": "July 2026",
+    "prism:doi": "10.3390/computers15070401",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "RTU Liepaja Academy",
+        "affiliation-city": "Liepaja",
+        "affiliation-country": "Latvia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "401",
+    "source-id": "21100886391",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105038338204"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105038338204?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105038338204&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105038338204&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105038338204",
+    "dc:identifier": "SCOPUS_ID:105038338204",
+    "eid": "2-s2.0-105038338204",
+    "dc:title": "Reconstructing Innovation and Entrepreneurship Education Model with AI Empowerment and Enhancing Teachers’ Teaching Ability",
+    "dc:creator": "Li W.",
+    "prism:publicationName": "Proceedings of 2025 4th International Conference on Artificial Intelligence and Education Icaie 2025",
+    "prism:isbn": [
+      {
+        "@_fa": "true",
+        "$": "[9798400720925]"
+      }
+    ],
+    "prism:pageRange": "81-86",
+    "prism:coverDate": "2026-04-23",
+    "prism:coverDisplayDate": "23 April 2026",
+    "prism:doi": "10.1145/3797552.3797566",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Qilu Institute of Technology",
+        "affiliation-city": "Jinan",
+        "affiliation-country": "China"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "21101443675",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105033700281"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105033700281?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105033700281&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105033700281&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105033700281",
+    "dc:identifier": "SCOPUS_ID:105033700281",
+    "eid": "2-s2.0-105033700281",
+    "dc:title": "Artificial Intelligence in Online Education: A Systematic Review of Its Impact on Learner Engagement and Satisfaction",
+    "dc:creator": "Katalinic A.",
+    "prism:publicationName": "Education Sciences",
+    "prism:eIssn": "22277102",
+    "prism:volume": "16",
+    "prism:issueIdentifier": "3",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-03-01",
+    "prism:coverDisplayDate": "March 2026",
+    "prism:doi": "10.3390/educsci16030389",
+    "citedby-count": "5",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Faculty of Informatics and Digital Technologies, University of Rijeka",
+        "affiliation-city": "Rijeka",
+        "affiliation-country": "Croatia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "re",
+    "subtypeDescription": "Review",
+    "article-number": "389",
+    "source-id": "21100897500",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105031358347"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105031358347?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105031358347&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105031358347&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105031358347",
+    "dc:identifier": "SCOPUS_ID:105031358347",
+    "eid": "2-s2.0-105031358347",
+    "dc:title": "DK-PRACTICE: An Intelligent Platform for Knowledge Tracing and Educational Content Recommendation: A Case Study in Higher Education",
+    "dc:creator": "Delianidi M.",
+    "prism:publicationName": "Information Switzerland",
+    "prism:eIssn": "20782489",
+    "prism:volume": "17",
+    "prism:issueIdentifier": "2",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-02-01",
+    "prism:coverDisplayDate": "February 2026",
+    "prism:doi": "10.3390/info17020202",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "International Hellenic University",
+        "affiliation-city": "Thessaloniki",
+        "affiliation-country": "Greece"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "202",
+    "source-id": "21100223111",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105048208310"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105048208310?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105048208310&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105048208310&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105048208310",
+    "dc:identifier": "SCOPUS_ID:105048208310",
+    "eid": "2-s2.0-105048208310",
+    "dc:title": "Predicting Student Outcomes in Open High Schools Using Educational Data Mining",
+    "dc:creator": "Polat A.",
+    "prism:publicationName": "International Review of Research in Open and Distributed Learning",
+    "prism:eIssn": "14923831",
+    "prism:volume": "27",
+    "prism:issueIdentifier": "3",
+    "prism:pageRange": "293-320",
+    "prism:coverDate": "2026-08-01",
+    "prism:coverDisplayDate": "August 2026",
+    "prism:doi": "10.19173/irrodl.v27i3.8858",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Ministry of National Education",
+        "affiliation-city": "Sivas",
+        "affiliation-country": "Turkey"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "17781",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037768364"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037768364?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105037768364&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105037768364&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105037768364",
+    "dc:identifier": "SCOPUS_ID:105037768364",
+    "eid": "2-s2.0-105037768364",
+    "dc:title": "Multidimensional predictive models of academic performance based on academic, behavioral, and digital interaction variables in university students",
+    "dc:creator": "Defas Ayala R.V.",
+    "prism:publicationName": "Prisma Social",
+    "prism:eIssn": "19893469",
+    "prism:volume": "2026",
+    "prism:issueIdentifier": "53",
+    "prism:pageRange": "405-419",
+    "prism:coverDate": "2026-04-30",
+    "prism:coverDisplayDate": "30 April 2026",
+    "prism:doi": "10.65598/rps.6164",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Central del Ecuador",
+        "affiliation-city": "Quito",
+        "affiliation-country": "Ecuador"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100264820",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105038001217"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105038001217?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105038001217&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105038001217&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105038001217",
+    "dc:identifier": "SCOPUS_ID:105038001217",
+    "eid": "2-s2.0-105038001217",
+    "dc:title": "Early warning and recommendation system for undergraduate students at higher education institutions based on machine learning methods",
+    "dc:creator": "Taqatqeh S.",
+    "prism:publicationName": "Peerj Computer Science",
+    "prism:eIssn": "23765992",
+    "prism:volume": "12",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.7717/peerj-cs.3792",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Uluslararası Kıbrıs Üniversitesi",
+        "affiliation-city": "Nicosia",
+        "affiliation-country": "Cyprus"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "e3792",
+    "source-id": "21100830173",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105051966973"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105051966973?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105051966973&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105051966973&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105051966973",
+    "dc:identifier": "SCOPUS_ID:105051966973",
+    "eid": "2-s2.0-105051966973",
+    "dc:title": "CHARACTERIZATION AND PREDICTION OF ACADEMIC PERFORMANCE IN HIGHER EDUCATION IN ENGINEERING USING MACHINE LEARNING TECHNIQUES",
+    "dc:creator": "Sosa-Cabrera G.",
+    "prism:publicationName": "Journal of Technology and Science Education",
+    "prism:issn": "20145349",
+    "prism:eIssn": "20136374",
+    "prism:volume": "16",
+    "prism:issueIdentifier": "2",
+    "prism:pageRange": "554-575",
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.3926/jotse.4362",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional de Asuncion",
+        "affiliation-city": "San Lorenzo",
+        "affiliation-country": "Paraguay"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100450131",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105035833821"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105035833821?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105035833821&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105035833821&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105035833821",
+    "dc:identifier": "SCOPUS_ID:105035833821",
+    "eid": "2-s2.0-105035833821",
+    "dc:title": "Construction of Academic Performance Early Warning Model for Vocational Colleges Based on XGBoost Algorithm",
+    "dc:creator": "Weixuan L.",
+    "prism:publicationName": "Lecture Notes in Electrical Engineering",
+    "prism:issn": "18761100",
+    "prism:eIssn": "18761119",
+    "prism:isbn": [
+      {
+        "@_fa": "true",
+        "$": "[9789819521128]"
+      }
+    ],
+    "prism:volume": "1481 LNEE",
+    "prism:pageRange": "109-118",
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.1007/978-981-95-2113-5_11",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Guangzhou Huashang College",
+        "affiliation-city": "Guangzhou",
+        "affiliation-country": "China"
+      }
+    ],
+    "prism:aggregationType": "Book Series",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "19700186822",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherhybridgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Hybrid Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043014679"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043014679?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105043014679&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105043014679&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105043014679",
+    "dc:identifier": "SCOPUS_ID:105043014679",
+    "eid": "2-s2.0-105043014679",
+    "dc:title": "Predicting University Student Dropout Risk Using Deep Learning and Ensemble Voting Mechanism †",
+    "dc:creator": "Cheng Y.H.",
+    "prism:publicationName": "Engineering Proceedings",
+    "prism:eIssn": "26734591",
+    "prism:volume": "120",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.3390/engproc2025120066",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Chaoyang University of Technology",
+        "affiliation-city": "Taichung",
+        "affiliation-country": "Taiwan"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "66",
+    "source-id": "21101128137",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105040197434"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105040197434?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105040197434&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105040197434&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105040197434",
+    "dc:identifier": "SCOPUS_ID:105040197434",
+    "eid": "2-s2.0-105040197434",
+    "dc:title": "Interpretable Undergraduate Dropout Prediction via Explainable Boosting and Gaussian Hidden Markov Models",
+    "dc:creator": "Pacheco E.J.",
+    "prism:publicationName": "IEEE Access",
+    "prism:eIssn": "21693536",
+    "prism:volume": "14",
+    "prism:pageRange": "79029-79044",
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.1109/ACCESS.2026.3696589",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidade Federal do Parana",
+        "affiliation-city": "Curitiba",
+        "affiliation-country": "Brazil"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100374601",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105026802184"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105026802184?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105026802184&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105026802184&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105026802184",
+    "dc:identifier": "SCOPUS_ID:105026802184",
+    "eid": "2-s2.0-105026802184",
+    "dc:title": "A Stacking Ensemble Model for Predicting Student High School Graduation Outcomes",
+    "dc:creator": "Fitriyani ",
+    "prism:publicationName": "Journal of Applied Data Sciences",
+    "prism:eIssn": "27236471",
+    "prism:volume": "7",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": "249-260",
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "January 2026",
+    "prism:doi": "10.47738/jads.v7i1.1067",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "ISB Atma Luhur",
+        "affiliation-city": "Pangkal Pinang",
+        "affiliation-country": "Indonesia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21101176022",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105011178694"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105011178694?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105011178694&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105011178694&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "full-text",
+        "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S277294192500170X"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105011178694",
+    "dc:identifier": "SCOPUS_ID:105011178694",
+    "eid": "2-s2.0-105011178694",
+    "dc:title": "Predicting student retention: A comparative study of machine learning approach utilizing sociodemographic and academic factors",
+    "dc:creator": "Deleña R.D.",
+    "prism:publicationName": "Systems and Soft Computing",
+    "prism:eIssn": "27729419",
+    "prism:volume": "7",
+    "prism:pageRange": null,
+    "prism:coverDate": "2025-12-01",
+    "prism:coverDisplayDate": "December 2025",
+    "prism:doi": "10.1016/j.sasc.2025.200352",
+    "pii": "S277294192500170X",
+    "citedby-count": "23",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Mindanao State University – Iligan Institute of Technology",
+        "affiliation-city": "Iligan",
+        "affiliation-country": "Philippines"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "200352",
+    "source-id": "21101091183",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105023151749"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105023151749?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105023151749&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105023151749&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105023151749",
+    "dc:identifier": "SCOPUS_ID:105023151749",
+    "eid": "2-s2.0-105023151749",
+    "dc:title": "Early detection of at-risk health sciences students: a machine learning-based predictive study using midterm grades",
+    "dc:creator": "Al Hashmi R.A.M.",
+    "prism:publicationName": "BMC Medical Education",
+    "prism:eIssn": "14726920",
+    "prism:volume": "25",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2025-12-01",
+    "prism:coverDisplayDate": "December 2025",
+    "prism:doi": "10.1186/s12909-025-08192-6",
+    "citedby-count": "8",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "College of Business Administration",
+        "affiliation-city": "Sharjah",
+        "affiliation-country": "United Arab Emirates"
+      }
+    ],
+    "pubmed-id": "41299422",
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "1651",
+    "source-id": "28099",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105035542777"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105035542777?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105035542777&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105035542777&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105035542777",
+    "dc:identifier": "SCOPUS_ID:105035542777",
+    "eid": "2-s2.0-105035542777",
+    "dc:title": "Explainable machine learning for student dropout prediction and tailored interventions in online personalized education",
+    "dc:creator": "Nti I.K.",
+    "prism:publicationName": "Discover Artificial Intelligence",
+    "prism:eIssn": "27310809",
+    "prism:volume": "6",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-12-01",
+    "prism:coverDisplayDate": "December 2026",
+    "prism:doi": "10.1007/s44163-026-01016-6",
+    "citedby-count": "4",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Cincinnati",
+        "affiliation-city": "Cincinnati",
+        "affiliation-country": "United States"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "288",
+    "source-id": "21101215114",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043158873"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105043158873?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105043158873&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105043158873&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105043158873",
+    "dc:identifier": "SCOPUS_ID:105043158873",
+    "eid": "2-s2.0-105043158873",
+    "dc:title": "Two-Level Monitoring System for Preventing Academic Failure, Based on Predictive Models and SHAP Analysis",
+    "dc:creator": "Esin R.V.",
+    "prism:publicationName": "Education Sciences",
+    "prism:eIssn": "22277102",
+    "prism:volume": "16",
+    "prism:issueIdentifier": "6",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-06-01",
+    "prism:coverDisplayDate": "June 2026",
+    "prism:doi": "10.3390/educsci16060842",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Siberian Federal University",
+        "affiliation-city": "Krasnoyarsk",
+        "affiliation-country": "Russian Federation"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "842",
+    "source-id": "21100897500",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105040506590"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105040506590?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105040506590&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105040506590&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105040506590",
+    "dc:identifier": "SCOPUS_ID:105040506590",
+    "eid": "2-s2.0-105040506590",
+    "dc:title": "Prescriptive Learning Analytics for Student Dropout: Integrating Temporal Velocity and Counterfactual Explanations in Longitudinal Data",
+    "dc:creator": "Hidayat N.",
+    "prism:publicationName": "Journal of Computing Theories and Applications",
+    "prism:eIssn": "30249104",
+    "prism:volume": "3",
+    "prism:issueIdentifier": "4",
+    "prism:pageRange": "627-646",
+    "prism:coverDate": "2026-05-31",
+    "prism:coverDisplayDate": "31 May 2026",
+    "prism:doi": "10.62411/jcta.15920",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universitas Jenderal Soedirman",
+        "affiliation-city": "Purwokerto",
+        "affiliation-country": "Indonesia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21101378062",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105042991676"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105042991676?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105042991676&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105042991676&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105042991676",
+    "dc:identifier": "SCOPUS_ID:105042991676",
+    "eid": "2-s2.0-105042991676",
+    "dc:title": "Predictive Modeling for Student Dropout in Online Courses Using Ensemble Deep Reinforcement Learning",
+    "dc:creator": "Ganesan A.",
+    "prism:publicationName": "International Journal of Artificial Intelligence and Machine Learning",
+    "prism:eIssn": "27892557",
+    "prism:volume": "6",
+    "prism:issueIdentifier": "1S",
+    "prism:pageRange": "177-187",
+    "prism:coverDate": "2026-04-15",
+    "prism:coverDisplayDate": "15 April 2026",
+    "prism:doi": "10.51483/IJAIML.6.1s.2026.177-187",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "St. Joseph's College of Engineering",
+        "affiliation-city": "Chennai",
+        "affiliation-country": "India"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21101344619",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherhybridgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Hybrid Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85190686606"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85190686606?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85190686606&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85190686606&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85190686606",
+    "dc:identifier": "SCOPUS_ID:85190686606",
+    "eid": "2-s2.0-85190686606",
+    "dc:title": "Supervised machine learning algorithms for predicting student dropout and academic success: a comparative study",
+    "dc:creator": "Villar A.",
+    "prism:publicationName": "Discover Artificial Intelligence",
+    "prism:eIssn": "27310809",
+    "prism:volume": "4",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2024-12-01",
+    "prism:coverDisplayDate": "December 2024",
+    "prism:doi": "10.1007/s44163-023-00079-z",
+    "citedby-count": "113",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "University of Essex",
+        "affiliation-city": "Colchester",
+        "affiliation-country": "United Kingdom"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "2",
+    "source-id": "21101215114",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85156146754"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85156146754?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85156146754&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85156146754&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85156146754",
+    "dc:identifier": "SCOPUS_ID:85156146754",
+    "eid": "2-s2.0-85156146754",
+    "dc:title": "Multi-Class Phased Prediction of Academic Performance and Dropout in Higher Education",
+    "dc:creator": "Martins M.V.",
+    "prism:publicationName": "Applied Sciences Switzerland",
+    "prism:eIssn": "20763417",
+    "prism:volume": "13",
+    "prism:issueIdentifier": "8",
+    "prism:pageRange": null,
+    "prism:coverDate": "2023-04-01",
+    "prism:coverDisplayDate": "April 2023",
+    "prism:doi": "10.3390/app13084702",
+    "citedby-count": "49",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Politécnico de Portalegre",
+        "affiliation-city": "Portalegre",
+        "affiliation-country": "Portugal"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "4702",
+    "source-id": "21100829268",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85174246140"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85174246140?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85174246140&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85174246140&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85174246140",
+    "dc:identifier": "SCOPUS_ID:85174246140",
+    "eid": "2-s2.0-85174246140",
+    "dc:title": "Predictive analytics study to determine undergraduate students at risk of dropout",
+    "dc:creator": "Gonzalez-Nucamendi A.",
+    "prism:publicationName": "Frontiers in Education",
+    "prism:eIssn": "2504284X",
+    "prism:volume": "8",
+    "prism:pageRange": null,
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "2023",
+    "prism:doi": "10.3389/feduc.2023.1244686",
+    "citedby-count": "52",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Tecnológico de Monterrey",
+        "affiliation-city": "Monterrey",
+        "affiliation-country": "Mexico"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "1244686",
+    "source-id": "21100935978",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85134846949"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85134846949?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85134846949&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85134846949&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85134846949",
+    "dc:identifier": "SCOPUS_ID:85134846949",
+    "eid": "2-s2.0-85134846949",
+    "dc:title": "Improving Dropout Forecasting during the COVID-19 Pandemic through Feature Selection and Multilayer Perceptron Neural Network",
+    "dc:creator": "Nuanmeesri S.",
+    "prism:publicationName": "International Journal of Information and Education Technology",
+    "prism:eIssn": "20103689",
+    "prism:volume": "12",
+    "prism:issueIdentifier": "9",
+    "prism:pageRange": "851-857",
+    "prism:coverDate": "2022-09-01",
+    "prism:coverDisplayDate": "September 2022",
+    "prism:doi": "10.18178/ijiet.2022.12.9.1693",
+    "citedby-count": "26",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "King Mongkut's University of Technology North Bangkok",
+        "affiliation-city": "Bangkok",
+        "affiliation-country": "Thailand"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100921050",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85127330828"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85127330828?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85127330828&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85127330828&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "full-text",
+        "@href": "https://api.elsevier.com/content/article/eid/1-s2.0-S2666920X22000212"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85127330828",
+    "dc:identifier": "SCOPUS_ID:85127330828",
+    "eid": "2-s2.0-85127330828",
+    "dc:title": "Predicting student's dropout in university classes using two-layer ensemble machine learning approach: A novel stacked generalization",
+    "dc:creator": "Niyogisubizo J.",
+    "prism:publicationName": "Computers and Education Artificial Intelligence",
+    "prism:eIssn": "2666920X",
+    "prism:volume": "3",
+    "prism:pageRange": null,
+    "prism:coverDate": "2022-01-01",
+    "prism:coverDisplayDate": "January 2022",
+    "prism:doi": "10.1016/j.caeai.2022.100066",
+    "pii": "S2666920X22000212",
+    "citedby-count": "185",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Fujian University of Technology",
+        "affiliation-city": "Fuzhou",
+        "affiliation-country": "China"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "100066",
+    "source-id": "21101074919",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85140895796"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85140895796?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85140895796&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85140895796&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140895796",
+    "dc:identifier": "SCOPUS_ID:85140895796",
+    "eid": "2-s2.0-85140895796",
+    "dc:title": "To evaluate the performance of machine learning algorithms in predicting student dropout on MOOC platforms",
+    "dc:creator": "Kumar G.",
+    "prism:publicationName": "Journal of Physics Conference Series",
+    "prism:issn": "17426588",
+    "prism:eIssn": "17426596",
+    "prism:volume": "2327",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2022-01-01",
+    "prism:coverDisplayDate": "2022",
+    "prism:doi": "10.1088/1742-6596/2327/1/012063",
+    "citedby-count": "2",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Lovely Professional University",
+        "affiliation-city": "Phagwara",
+        "affiliation-country": "India"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "article-number": "012063",
+    "source-id": "130053",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Comparative analysis of Machine Learning Techniques for the prediction of cases of university dropout",
+    "doi": "10.17013/risti.51.84-98",
+    "year": "2023",
+    "journal": "Risti Revista Iberica De Sistemas E Tecnologias De Informacao",
+    "creator": "Tito A.E.A.",
+    "is_oa": true,
+    "pdf_url": "http://scielo.pt/pdf/rist/n51/1646-9895-rist-51-84.pdf"
+  },
+  {
+    "title": "Deserción universitaria: Evaluación de diferentes algoritmos de Machine Learning para su predicción",
+    "doi": "10.31876/rcs.v28i3.38480",
+    "year": "2022",
+    "journal": "Revista De Ciencias Sociales",
+    "creator": "Elvis V.C.J.",
+    "is_oa": true,
+    "pdf_url": "https://www.produccioncientificaluz.org/index.php/rcs/article/download/38480/42720"
+  },
+  {
+    "title": "Predictive model based on machine learning for the early identification of student dropout in a public university",
+    "doi": "10.18687/LACCEI2026.1.1.721",
+    "year": "2026",
+    "journal": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "creator": "Aparicio-Montenegro P.",
+    "is_oa": false,
+    "pdf_url": null
+  },
+  {
+    "title": "Learning Analytics and Student Retention: A Longitudinal Study in Virtual Higher Education",
+    "doi": "10.12795/revistafuentes.2025.27592",
+    "year": "2025",
+    "journal": "Revista Fuentes",
+    "creator": "Alamo E.M.C.",
+    "is_oa": true,
+    "pdf_url": "https://doi.org/10.12795/revistafuentes.2025.27592"
+  },
+  {
+    "title": "Using data mining to understand student attrition in universities: A systematic review",
+    "doi": "10.18687/LACCEI2025.1.1.1180",
+    "year": "2025",
+    "journal": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "creator": "Gonzales E.",
+    "is_oa": false,
+    "pdf_url": null
+  },
+  {
+    "title": "Modelo de clasificación para la deserción estudiantil en las universidades públicas del Perú",
+    "doi": "10.31876/rcs.v30i1.41667",
+    "year": "2024",
+    "journal": "Revista De Ciencias Sociales",
+    "creator": "Villarreal-Torres H.",
+    "is_oa": true,
+    "pdf_url": "https://produccioncientificaluz.org/index.php/rcs/article/download/41667/48175"
+  },
+  {
+    "title": "Classification model for student attrition in a Peru public university",
+    "doi": "10.56294/sctconf2023175",
+    "year": "2023",
+    "journal": "Salud Ciencia Y Tecnologia Serie De Conferencias",
+    "creator": "Torres H.V.",
+    "is_oa": true,
+    "pdf_url": "https://conferencias.saludcyt.ar/index.php/sctconf/article/download/175/178"
+  },
+  {
+    "title": "Multidimensional predictive models of academic performance based on academic, behavioral, and digital interaction variables in university students",
+    "doi": "10.65598/rps.6164",
+    "year": "2026",
+    "journal": "Prisma Social",
+    "creator": "Defas Ayala R.V.",
+    "is_oa": true,
+    "pdf_url": "https://revistaprismasocial.es/ps/article/download/6164/6519"
+  },
+  {
+    "title": "Predictive analysis and modeling of academic performance using machine learning techniques in a secondary education institution",
+    "doi": "10.51252/rcsi.v6i1.1212",
+    "year": "2026",
+    "journal": "Revista Cientifica De Sistemas E Informatica",
+    "creator": "Zalasar A.M.",
+    "is_oa": true,
+    "pdf_url": "http://revistas.unsm.edu.pe/index.php/rcsi/article/download/1212/1519"
+  },
+  {
+    "title": "Inequality of Opportunity in Education in Spanish Regions: A Machine Learning Approach",
+    "doi": "10.7866/HPE-RPE.25.1.4",
+    "year": "2025",
+    "journal": "Hacienda Publica Espanola",
+    "creator": "Bencomo-Mesa P.",
+    "is_oa": true,
+    "pdf_url": "https://doi.org/10.7866/hpe-rpe.25.1.4"
+  },
+  {
+    "title": "An Efficient Hybrid Deep Learning Framework for Predicting Student Academic Performance",
+    "doi": "10.56294/sctconf2024759",
+    "year": "2024",
+    "journal": "Salud Ciencia Y Tecnologia Serie De Conferencias",
+    "creator": "Viveka M.",
+    "is_oa": true,
+    "pdf_url": "https://doi.org/10.56294/sctconf2024759"
+  },
+  {
+    "title": "Application of artificial intelligence to predict academic performance in order to prevent dropout in high school students: Systematic Literature Review",
+    "doi": "10.18687/LACCEI2024.1.1.1426",
+    "year": "2024",
+    "journal": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "creator": "Salazar Alberto R.A.",
+    "is_oa": true,
+    "pdf_url": "https://laccei.org/LACCEI2024-CostaRica/full-papers/Contribution_1426_final_a.pdf"
+  },
+  {
+    "title": "Main influential factors in academic performance. Analysis from data mining",
+    "doi": "10.4067/s0718-33052024000100245",
+    "year": "2024",
+    "journal": "Ingeniare",
+    "creator": "Danilo Castrillón O.",
+    "is_oa": true,
+    "pdf_url": "http://www.scielo.cl/pdf/ingeniare/v32/0718-3305-ingeniare-32-45.pdf"
+  },
+  {
+    "title": "Prediction of University-Level Academic Performance through Machine Learning Mechanisms and Supervised Methods",
+    "doi": "10.14483/23448393.19514",
+    "year": "2023",
+    "journal": "Ingenieria Colombia",
+    "creator": "Contreas-Bravo L.E.",
+    "is_oa": true,
+    "pdf_url": "https://revistas.udistrital.edu.co/index.php/reving/article/download/19514/18659"
+  },
+  {
+    "title": "Analysis of variables associated with academic performance on online university courses",
+    "doi": "10.4067/S0718-50062023000400033",
+    "year": "2023",
+    "journal": "Formacion Universitaria",
+    "creator": "Gil-Vera V.D.",
+    "is_oa": true,
+    "pdf_url": "http://www.scielo.cl/pdf/formuniv/v16n4/0718-5006-formuniv-16-04-33.pdf"
+  },
+  {
+    "title": "Learning styles and academic performance in the digital era in Peruvian engineering students",
+    "doi": "10.31876/rcs.v29i4.41235",
+    "year": "2023",
+    "journal": "Revista De Ciencias Sociales",
+    "creator": "Arias-Pittman J.A.",
+    "is_oa": true,
+    "pdf_url": "https://produccioncientificaluz.org/index.php/rcs/article/download/41235/47490"
+  },
+  {
+    "title": "Explanatory Factors of University Dropout Explored Through Artificial Intelligence",
+    "doi": "10.24320/REDIE.2023.25.E18.4455",
+    "year": "2023",
+    "journal": "Revista Electronica De Investigacion Educativa",
+    "creator": "Parra-Sánchez J.S.",
+    "is_oa": true,
+    "pdf_url": "https://redie.uabc.mx/redie/article/download/4455/2425"
+  },
+  {
+    "title": "Web Platform for the Predictive Analysis of Student Dropout in a Higher Education Institution in Latin America",
+    "doi": "10.18687/LACCEI2025.1.1.1998",
+    "year": "2025",
+    "journal": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "creator": "Blanco López J.",
+    "is_oa": true,
+    "pdf_url": "https://laccei.org/LACCEI2025-Mexico/full-papers/Contribution_1998_final_a.pdf"
+  },
+  {
+    "title": "Collaborative learning and dropout in higher education: new perspective",
+    "doi": "10.4067/S0718-50062025000300157",
+    "year": "2025",
+    "journal": "Formacion Universitaria",
+    "creator": "González-Campos J.A.",
+    "is_oa": true,
+    "pdf_url": "https://doi.org/10.4067/s0718-50062025000300157"
+  },
+  {
+    "title": "Between expectations and frustrations: student dropout from an inclusive university access program in Chile",
+    "doi": "10.16888/interd.2025.42.1.23",
+    "year": "2025",
+    "journal": "Interdisciplinaria",
+    "creator": "Utreras E.G.",
+    "is_oa": false,
+    "pdf_url": null
+  },
+  {
+    "title": "Risk factors for student dropout in higher education institutions in Latin America",
+    "doi": "10.56294/saludcyt2024.592",
+    "year": "2024",
+    "journal": "Salud Ciencia Y Tecnologia",
+    "creator": "García F.I.G.",
+    "is_oa": true,
+    "pdf_url": "https://sct.ageditor.ar/index.php/sct/article/download/592/1840"
+  }
+]

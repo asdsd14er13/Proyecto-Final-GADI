@@ -1,0 +1,1600 @@
+[
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85178287934"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85178287934?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85178287934&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85178287934&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85178287934",
+    "dc:identifier": "SCOPUS_ID:85178287934",
+    "eid": "2-s2.0-85178287934",
+    "dc:title": "Comparative analysis of Machine Learning Techniques for the prediction of cases of university dropout",
+    "dc:creator": "Tito A.E.A.",
+    "prism:publicationName": "Risti Revista Iberica De Sistemas E Tecnologias De Informacao",
+    "prism:issn": "16469895",
+    "prism:volume": "2023",
+    "prism:issueIdentifier": "e51",
+    "prism:pageRange": "84-98",
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "2023",
+    "prism:doi": "10.17013/risti.51.84-98",
+    "citedby-count": "11",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional de San Agustin de Arequipa",
+        "affiliation-city": "Arequipa",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100197714",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85135042847"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85135042847?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85135042847&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85135042847&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85135042847",
+    "dc:identifier": "SCOPUS_ID:85135042847",
+    "eid": "2-s2.0-85135042847",
+    "dc:title": "Deserción universitaria: Evaluación de diferentes algoritmos de Machine Learning para su predicción",
+    "dc:creator": "Elvis V.C.J.",
+    "prism:publicationName": "Revista De Ciencias Sociales",
+    "prism:issn": "13159518",
+    "prism:volume": "28",
+    "prism:issueIdentifier": "3",
+    "prism:pageRange": "362-375",
+    "prism:coverDate": "2022-01-01",
+    "prism:coverDisplayDate": "2022",
+    "prism:doi": "10.31876/rcs.v28i3.38480",
+    "citedby-count": "20",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional Tecnológica De Lima Sur",
+        "affiliation-city": "Lima",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "5600152899",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105048793080"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105048793080?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105048793080&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105048793080&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105048793080",
+    "dc:identifier": "SCOPUS_ID:105048793080",
+    "eid": "2-s2.0-105048793080",
+    "dc:title": "Predictive model based on machine learning for the early identification of student dropout in a public university",
+    "dc:creator": "Aparicio-Montenegro P.",
+    "prism:publicationName": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "prism:eIssn": "24146390",
+    "prism:isbn": [
+      {
+        "@_fa": "true",
+        "$": "[9786289661330]"
+      }
+    ],
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-01-01",
+    "prism:coverDisplayDate": "2026",
+    "prism:doi": "10.18687/LACCEI2026.1.1.721",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Federico Villarreal National University",
+        "affiliation-city": "Lima",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "21100907750",
+    "openaccess": "0",
+    "openaccessFlag": false
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037971054"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037971054?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105037971054&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105037971054&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105037971054",
+    "dc:identifier": "SCOPUS_ID:105037971054",
+    "eid": "2-s2.0-105037971054",
+    "dc:title": "Learning Analytics and Student Retention: A Longitudinal Study in Virtual Higher Education",
+    "dc:creator": "Alamo E.M.C.",
+    "prism:publicationName": "Revista Fuentes",
+    "prism:eIssn": "21727775",
+    "prism:volume": "27",
+    "prism:issueIdentifier": "3",
+    "prism:pageRange": "314-325",
+    "prism:coverDate": "2025-09-15",
+    "prism:coverDisplayDate": "September 2025",
+    "prism:doi": "10.12795/revistafuentes.2025.27592",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Instituto Europeo de Posgrado",
+        "affiliation-city": "Madrid",
+        "affiliation-country": "Spain"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100896938",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105019309301"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105019309301?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105019309301&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105019309301&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105019309301",
+    "dc:identifier": "SCOPUS_ID:105019309301",
+    "eid": "2-s2.0-105019309301",
+    "dc:title": "Using data mining to understand student attrition in universities: A systematic review",
+    "dc:creator": "Gonzales E.",
+    "prism:publicationName": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "prism:eIssn": "24146390",
+    "prism:issueIdentifier": "2025",
+    "prism:pageRange": null,
+    "prism:coverDate": "2025-01-01",
+    "prism:coverDisplayDate": "2025",
+    "prism:doi": "10.18687/LACCEI2025.1.1.1180",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Tecnológica del Perú",
+        "affiliation-city": "Lima",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "21100907750",
+    "openaccess": "0",
+    "openaccessFlag": false
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85187492035"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85187492035?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85187492035&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85187492035&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85187492035",
+    "dc:identifier": "SCOPUS_ID:85187492035",
+    "eid": "2-s2.0-85187492035",
+    "dc:title": "Modelo de clasificación para la deserción estudiantil en las universidades públicas del Perú",
+    "dc:creator": "Villarreal-Torres H.",
+    "prism:publicationName": "Revista De Ciencias Sociales",
+    "prism:issn": "13159518",
+    "prism:volume": "30",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": "452-469",
+    "prism:coverDate": "2024-01-01",
+    "prism:coverDisplayDate": "2024",
+    "prism:doi": "10.31876/rcs.v30i1.41667",
+    "citedby-count": "8",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad San Pedro",
+        "affiliation-city": "Chimbote",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "5600152899",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184256559"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184256559?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184256559&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184256559&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184256559",
+    "dc:identifier": "SCOPUS_ID:85184256559",
+    "eid": "2-s2.0-85184256559",
+    "dc:title": "Classification model for student attrition in a Peru public university",
+    "dc:creator": "Torres H.V.",
+    "prism:publicationName": "Salud Ciencia Y Tecnologia Serie De Conferencias",
+    "prism:eIssn": "29534860",
+    "prism:volume": "2",
+    "prism:pageRange": null,
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "1 January 2023",
+    "prism:doi": "10.56294/sctconf2023175",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad San Pedro",
+        "affiliation-city": "Chimbote",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "175",
+    "source-id": "21101199899",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037768364"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105037768364?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105037768364&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105037768364&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105037768364",
+    "dc:identifier": "SCOPUS_ID:105037768364",
+    "eid": "2-s2.0-105037768364",
+    "dc:title": "Multidimensional predictive models of academic performance based on academic, behavioral, and digital interaction variables in university students",
+    "dc:creator": "Defas Ayala R.V.",
+    "prism:publicationName": "Prisma Social",
+    "prism:eIssn": "19893469",
+    "prism:volume": "2026",
+    "prism:issueIdentifier": "53",
+    "prism:pageRange": "405-419",
+    "prism:coverDate": "2026-04-30",
+    "prism:coverDisplayDate": "30 April 2026",
+    "prism:doi": "10.65598/rps.6164",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Central del Ecuador",
+        "affiliation-city": "Quito",
+        "affiliation-country": "Ecuador"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100264820",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105029408139"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105029408139?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105029408139&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105029408139&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105029408139",
+    "dc:identifier": "SCOPUS_ID:105029408139",
+    "eid": "2-s2.0-105029408139",
+    "dc:title": "Predictive analysis and modeling of academic performance using machine learning techniques in a secondary education institution",
+    "dc:creator": "Zalasar A.M.",
+    "prism:publicationName": "Revista Cientifica De Sistemas E Informatica",
+    "prism:eIssn": "2709992X",
+    "prism:volume": "6",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2026-01-20",
+    "prism:coverDisplayDate": "20 January 2026",
+    "prism:doi": "10.51252/rcsi.v6i1.1212",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional de Salta",
+        "affiliation-city": "Salta",
+        "affiliation-country": "Argentina"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "e1212",
+    "source-id": "21101251694",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105001177241"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105001177241?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105001177241&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105001177241&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105001177241",
+    "dc:identifier": "SCOPUS_ID:105001177241",
+    "eid": "2-s2.0-105001177241",
+    "dc:title": "Inequality of Opportunity in Education in Spanish Regions: A Machine Learning Approach",
+    "dc:creator": "Bencomo-Mesa P.",
+    "prism:publicationName": "Hacienda Publica Espanola",
+    "prism:issn": "02101173",
+    "prism:eIssn": "23864176",
+    "prism:volume": "252",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": "113-162",
+    "prism:coverDate": "2025-01-01",
+    "prism:coverDisplayDate": "2025",
+    "prism:doi": "10.7866/HPE-RPE.25.1.4",
+    "citedby-count": "4",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad de la Laguna",
+        "affiliation-city": "San Cristobal de La Laguna",
+        "affiliation-country": "Spain"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "7600153108",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85194167841"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85194167841?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85194167841&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85194167841&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85194167841",
+    "dc:identifier": "SCOPUS_ID:85194167841",
+    "eid": "2-s2.0-85194167841",
+    "dc:title": "An Efficient Hybrid Deep Learning Framework for Predicting Student Academic Performance",
+    "dc:creator": "Viveka M.",
+    "prism:publicationName": "Salud Ciencia Y Tecnologia Serie De Conferencias",
+    "prism:eIssn": "29534860",
+    "prism:volume": "3",
+    "prism:pageRange": null,
+    "prism:coverDate": "2024-03-06",
+    "prism:coverDisplayDate": "6 March 2024",
+    "prism:doi": "10.56294/sctconf2024759",
+    "citedby-count": "6",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Dr.SNS Rajalakshmi College of Arts and Science",
+        "affiliation-city": "Coimbatore",
+        "affiliation-country": "India"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "759",
+    "source-id": "21101199899",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85203836652"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85203836652?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85203836652&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85203836652&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85203836652",
+    "dc:identifier": "SCOPUS_ID:85203836652",
+    "eid": "2-s2.0-85203836652",
+    "dc:title": "Application of artificial intelligence to predict academic performance in order to prevent dropout in high school students: Systematic Literature Review",
+    "dc:creator": "Salazar Alberto R.A.",
+    "prism:publicationName": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "prism:eIssn": "24146390",
+    "prism:isbn": [
+      {
+        "@_fa": "true",
+        "$": "[9786289520781]"
+      }
+    ],
+    "prism:pageRange": null,
+    "prism:coverDate": "2024-01-01",
+    "prism:coverDisplayDate": "2024",
+    "prism:doi": "10.18687/LACCEI2024.1.1.1426",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Tecnológica del Perú",
+        "affiliation-city": "Lima",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "21100907750",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105016703725"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105016703725?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105016703725&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105016703725&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105016703725",
+    "dc:identifier": "SCOPUS_ID:105016703725",
+    "eid": "2-s2.0-105016703725",
+    "dc:title": "Main influential factors in academic performance. Analysis from data mining",
+    "dc:creator": "Danilo Castrillón O.",
+    "prism:publicationName": "Ingeniare",
+    "prism:issn": "07183291",
+    "prism:eIssn": "07183305",
+    "prism:volume": "32",
+    "prism:pageRange": null,
+    "prism:coverDate": "2024-01-01",
+    "prism:coverDisplayDate": "2024",
+    "prism:doi": "10.4067/s0718-33052024000100245",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional de Colombia Manizales",
+        "affiliation-city": "Manizales",
+        "affiliation-country": "Colombia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "11600154153",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85179044890"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85179044890?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85179044890&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85179044890&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85179044890",
+    "dc:identifier": "SCOPUS_ID:85179044890",
+    "eid": "2-s2.0-85179044890",
+    "dc:title": "Prediction of University-Level Academic Performance through Machine Learning Mechanisms and Supervised Methods",
+    "dc:creator": "Contreas-Bravo L.E.",
+    "prism:publicationName": "Ingenieria Colombia",
+    "prism:issn": "0121750X",
+    "prism:eIssn": "23448393",
+    "prism:volume": "28",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "January-April 2023",
+    "prism:doi": "10.14483/23448393.19514",
+    "citedby-count": "11",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Distrital Francisco José de Caldas",
+        "affiliation-city": "Bogota",
+        "affiliation-country": "Colombia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "e19514",
+    "source-id": "21101208813",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85170249676"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85170249676?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170249676&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85170249676&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85170249676",
+    "dc:identifier": "SCOPUS_ID:85170249676",
+    "eid": "2-s2.0-85170249676",
+    "dc:title": "Analysis of variables associated with academic performance on online university courses",
+    "dc:creator": "Gil-Vera V.D.",
+    "prism:publicationName": "Formacion Universitaria",
+    "prism:eIssn": "07185006",
+    "prism:volume": "16",
+    "prism:issueIdentifier": "4",
+    "prism:pageRange": "33-42",
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "2023",
+    "prism:doi": "10.4067/S0718-50062023000400033",
+    "citedby-count": "4",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional de Colombia Medellin",
+        "affiliation-city": "Medellin",
+        "affiliation-country": "Colombia"
+      },
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Católica Luis Amigó",
+        "affiliation-city": "Medellin",
+        "affiliation-country": "Colombia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100211373",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85179682518"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85179682518?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85179682518&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85179682518&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85179682518",
+    "dc:identifier": "SCOPUS_ID:85179682518",
+    "eid": "2-s2.0-85179682518",
+    "dc:title": "Learning styles and academic performance in the digital era in Peruvian engineering students",
+    "dc:creator": "Arias-Pittman J.A.",
+    "prism:publicationName": "Revista De Ciencias Sociales",
+    "prism:issn": "13159518",
+    "prism:volume": "29",
+    "prism:issueIdentifier": "4",
+    "prism:pageRange": "50-63",
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "2023",
+    "prism:doi": "10.31876/rcs.v29i4.41235",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Nacional José Faustino Sánchez Carrión",
+        "affiliation-city": "Huacho",
+        "affiliation-country": "Peru"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "5600152899",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85169059890"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85169059890?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85169059890&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85169059890&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85169059890",
+    "dc:identifier": "SCOPUS_ID:85169059890",
+    "eid": "2-s2.0-85169059890",
+    "dc:title": "Explanatory Factors of University Dropout Explored Through Artificial Intelligence",
+    "dc:creator": "Parra-Sánchez J.S.",
+    "prism:publicationName": "Revista Electronica De Investigacion Educativa",
+    "prism:eIssn": "16074041",
+    "prism:volume": "25",
+    "prism:pageRange": null,
+    "prism:coverDate": "2023-01-01",
+    "prism:coverDisplayDate": "2023",
+    "prism:doi": "10.24320/REDIE.2023.25.E18.4455",
+    "citedby-count": "20",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Católica Luis Amigó",
+        "affiliation-city": "Medellin",
+        "affiliation-country": "Colombia"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "article-number": "e18",
+    "source-id": "5000159706",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105019294000"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105019294000?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105019294000&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105019294000&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105019294000",
+    "dc:identifier": "SCOPUS_ID:105019294000",
+    "eid": "2-s2.0-105019294000",
+    "dc:title": "Web Platform for the Predictive Analysis of Student Dropout in a Higher Education Institution in Latin America",
+    "dc:creator": "Blanco López J.",
+    "prism:publicationName": "Proceedings of the Laccei International Multi Conference for Engineering Education and Technology",
+    "prism:eIssn": "24146390",
+    "prism:issueIdentifier": "2025",
+    "prism:pageRange": null,
+    "prism:coverDate": "2025-01-01",
+    "prism:coverDisplayDate": "2025",
+    "prism:doi": "10.18687/LACCEI2025.1.1.1998",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Corporación Universitaria Adventista",
+        "affiliation-city": "Medellin",
+        "affiliation-country": "Colombia"
+      }
+    ],
+    "prism:aggregationType": "Conference Proceeding",
+    "subtype": "cp",
+    "subtypeDescription": "Conference Paper",
+    "source-id": "21100907750",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105008871196"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105008871196?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105008871196&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105008871196&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105008871196",
+    "dc:identifier": "SCOPUS_ID:105008871196",
+    "eid": "2-s2.0-105008871196",
+    "dc:title": "Collaborative learning and dropout in higher education: new perspective",
+    "dc:creator": "González-Campos J.A.",
+    "prism:publicationName": "Formacion Universitaria",
+    "prism:eIssn": "07185006",
+    "prism:volume": "18",
+    "prism:issueIdentifier": "3",
+    "prism:pageRange": "157-166",
+    "prism:coverDate": "2025-01-01",
+    "prism:coverDisplayDate": "2025",
+    "prism:doi": "10.4067/S0718-50062025000300157",
+    "citedby-count": "1",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Católica del Maule",
+        "affiliation-city": "Talca",
+        "affiliation-country": "Chile"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "21100211373",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        },
+        {
+          "$": "repository"
+        },
+        {
+          "$": "repositoryam"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        },
+        {
+          "$": "Green"
+        }
+      ]
+    }
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105024013299"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/105024013299?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105024013299&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=105024013299&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/105024013299",
+    "dc:identifier": "SCOPUS_ID:105024013299",
+    "eid": "2-s2.0-105024013299",
+    "dc:title": "Between expectations and frustrations: student dropout from an inclusive university access program in Chile",
+    "dc:creator": "Utreras E.G.",
+    "prism:publicationName": "Interdisciplinaria",
+    "prism:issn": "03258203",
+    "prism:eIssn": "16687027",
+    "prism:volume": "42",
+    "prism:issueIdentifier": "1",
+    "prism:pageRange": null,
+    "prism:coverDate": "2025-01-01",
+    "prism:coverDisplayDate": "January-June 2025",
+    "prism:doi": "10.16888/interd.2025.42.1.23",
+    "citedby-count": "0",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad Santo Tomas, Santiago",
+        "affiliation-city": "Santiago",
+        "affiliation-country": "Chile"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "ar",
+    "subtypeDescription": "Article",
+    "source-id": "19700175587",
+    "openaccess": "0",
+    "openaccessFlag": false
+  },
+  {
+    "@_fa": "true",
+    "link": [
+      {
+        "@_fa": "true",
+        "@ref": "self",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85205717566"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "author-affiliation",
+        "@href": "https://api.elsevier.com/content/abstract/scopus_id/85205717566?field=author,affiliation"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus",
+        "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85205717566&origin=inward"
+      },
+      {
+        "@_fa": "true",
+        "@ref": "scopus-citedby",
+        "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85205717566&origin=inward"
+      }
+    ],
+    "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85205717566",
+    "dc:identifier": "SCOPUS_ID:85205717566",
+    "eid": "2-s2.0-85205717566",
+    "dc:title": "Risk factors for student dropout in higher education institutions in Latin America",
+    "dc:creator": "García F.I.G.",
+    "prism:publicationName": "Salud Ciencia Y Tecnologia",
+    "prism:issn": "27969711",
+    "prism:volume": "4",
+    "prism:pageRange": null,
+    "prism:coverDate": "2024-01-01",
+    "prism:coverDisplayDate": "1 January 2024",
+    "prism:doi": "10.56294/saludcyt2024.592",
+    "citedby-count": "3",
+    "affiliation": [
+      {
+        "@_fa": "true",
+        "affilname": "Universidad San Gregorio de Portoviejo",
+        "affiliation-city": "Portoviejo",
+        "affiliation-country": "Ecuador"
+      }
+    ],
+    "prism:aggregationType": "Journal",
+    "subtype": "re",
+    "subtypeDescription": "Review",
+    "article-number": "592",
+    "source-id": "21101131037",
+    "openaccess": "1",
+    "openaccessFlag": true,
+    "freetoread": {
+      "value": [
+        {
+          "$": "all"
+        },
+        {
+          "$": "publisherfullgold"
+        }
+      ]
+    },
+    "freetoreadLabel": {
+      "value": [
+        {
+          "$": "All Open Access"
+        },
+        {
+          "$": "Gold"
+        }
+      ]
+    }
+  }
+]
